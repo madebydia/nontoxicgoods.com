@@ -4,7 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ .Title }} | Good Default</title>
-    <meta name="description" content="Good Default posts and guides for safer swaps, better household defaults, and practical product research.">
+    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}Good Default posts and guides for safer swaps, better household defaults, and practical product research.{{ end }}">
+    <meta property="og:title" content="{{ .Title }} | Good Default">
+    <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}Good Default posts and guides for safer swaps, better household defaults, and practical product research.{{ end }}">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/assets/gooddefault.png">
     <link rel="canonical" href="{{ .Permalink }}">
     <link rel="icon" href="/assets/good-default-logo.png">
     <link rel="stylesheet" href="/dark-mode.css">
@@ -12,35 +16,313 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700;9..144,900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ["Fraunces", "serif"],
+              sans: ["Inter", "sans-serif"]
+            },
+            colors: {
+              brand: {
+                bg: "#FDFDFB",
+                text: "#222222"
+              }
+            }
+          }
+        }
+      };
+    </script>
+    <style>
+      body {
+        background-color: #fdfdfb;
+        color: #222222;
+      }
+
+      .painterly-filter {
+        filter: sepia(10%) saturate(120%) contrast(102%) brightness(0.98);
+      }
+
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+
+      .stark-border {
+        border: 2px solid #1c1917;
+      }
+
+      .stark-border-thick {
+        border: 3px solid #1c1917;
+      }
+
+      .asymmetric-grid {
+        display: block;
+      }
+
+      .asymmetric-grid > * + * {
+        margin-top: 3rem;
+      }
+
+      @media (min-width: 1024px) {
+        .asymmetric-grid {
+          display: grid;
+          grid-template-columns: repeat(12, 1fr);
+        }
+
+        .asymmetric-grid > * + * {
+          margin-top: 0;
+        }
+      }
+
+      .post-card.is-hidden,
+      .post-section.is-hidden {
+        display: none;
+      }
+    </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": {{ .Title | jsonify | safeJS }},
+        "url": {{ .Permalink | jsonify | safeJS }},
+        "description": {{ with .Description }}{{ . | jsonify | safeJS }}{{ else }}"Good Default posts and guides for safer swaps, better household defaults, and practical product research."{{ end }},
+        "publisher": {
+          "@type": "Organization",
+          "name": "Good Default",
+          "url": "https://gooddefault.com/"
+        }
+      }
+    </script>
   </head>
-  <body class="font-sans antialiased bg-[#fdfdfb] text-stone-900">
-    <header class="px-6 md:px-12 py-6 border-b-4 border-stone-900 bg-[#fdfdfb]">
-      <div class="max-w-[1180px] mx-auto flex flex-col sm:flex-row justify-between gap-4 sm:items-end">
-        <a href="/" class="font-serif font-black text-4xl uppercase tracking-tighter leading-[0.85] no-underline">Good<br>Default</a>
-        <nav class="flex flex-wrap gap-5 text-xs font-black uppercase tracking-widest text-stone-500">
-          <a href="/p/" class="text-stone-900 border-b-2 border-stone-900 pb-1">Posts</a>
-          <a href="/catalog/" class="hover:text-stone-900">Catalog</a>
-          <a href="/compare/" class="hover:text-stone-900">Compare</a>
-          <a href="/#method" class="hover:text-stone-900">Method</a>
-        </nav>
+  <body class="font-sans antialiased flex flex-col min-h-screen selection:bg-stone-200 selection:text-stone-900">
+    {{ $posts := .Pages.ByDate.Reverse }}
+    {{ $categories := slice }}
+    {{ range $posts }}
+      {{ with .Params.category }}
+        {{ $categories = $categories | append . }}
+      {{ end }}
+    {{ end }}
+
+    <div class="bg-stone-900 text-stone-100 text-xs py-2 px-6 text-center tracking-widest uppercase font-semibold">
+      Research notes for better household defaults. Zero sponsored placements.
+    </div>
+
+    <header class="px-6 md:px-12 py-8 border-b-4 border-stone-900 flex flex-col md:flex-row justify-between items-center md:items-end gap-6 bg-brand-bg relative z-20">
+      <a href="/" class="block text-center md:text-left group">
+        <div class="font-serif font-black text-4xl md:text-5xl uppercase tracking-tighter leading-[0.85] text-stone-900 group-hover:text-stone-700 transition-colors">
+          Good<br>Default
+        </div>
+      </a>
+      <div class="flex items-center gap-4">
+        <a
+          href="/catalog/"
+          aria-label="Open catalog"
+          class="w-10 h-10 rounded-full border border-stone-300 flex items-center justify-center text-stone-900 hover:bg-stone-100 transition-colors"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+        </a>
+        <a
+          href="/catalog/"
+          class="bg-stone-900 text-stone-50 px-6 py-2.5 rounded-full text-sm font-bold tracking-wide hover:bg-stone-700 transition-colors"
+        >
+          Open Catalog
+        </a>
       </div>
     </header>
-    <main class="max-w-[1180px] mx-auto px-6 md:px-12 py-12 md:py-20">
-      <h1 class="font-serif font-black text-5xl md:text-7xl tracking-tighter mb-5">Good Default Posts</h1>
-      <p class="text-xl font-bold text-stone-500 max-w-3xl mb-12">Research notes and practical swaps from the Good Default catalog, hosted on GoodDefault.com.</p>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {{ range .Pages.ByDate.Reverse }}
-          <a href="{{ .RelPermalink }}" class="group block no-underline border-2 border-stone-900 bg-white">
-            {{ with .Params.image }}<img src="{{ . }}" alt="" class="w-full aspect-[4/3] object-cover border-b-2 border-stone-900">{{ end }}
-            <div class="p-6">
-              <span class="text-xs font-black uppercase tracking-widest text-stone-500">{{ .Params.category }}</span>
-              <h2 class="font-serif font-black text-3xl leading-tight mt-3 mb-3 group-hover:underline decoration-2 underline-offset-4">{{ .Title }}</h2>
-              <p class="text-stone-600 font-medium">{{ .Description }}</p>
-              <p class="text-xs font-bold uppercase tracking-widest text-stone-400 mt-5">{{ .Date.Format "Jan 2, 2006" }}</p>
-            </div>
-          </a>
-        {{ end }}
-      </div>
+
+    <nav class="border-b border-stone-200 bg-brand-bg sticky top-0 z-10">
+      <ul class="flex items-center gap-8 overflow-x-auto no-scrollbar px-6 md:px-12 py-4 text-xs md:text-sm font-bold uppercase tracking-widest text-stone-500 whitespace-nowrap max-w-[1440px] mx-auto">
+        <li><a href="/" class="hover:text-stone-900 transition-colors">Start Here</a></li>
+        <li><a href="/p/" class="text-stone-900 border-b-2 border-stone-900 pb-1">Posts</a></li>
+        <li><a href="/catalog/" class="hover:text-stone-900 transition-colors">Catalog</a></li>
+        <li><a href="/compare/" class="hover:text-stone-900 transition-colors">Compare</a></li>
+        <li><a href="/#method" class="hover:text-stone-900 transition-colors">Method</a></li>
+      </ul>
+    </nav>
+
+    <main class="flex-grow w-full max-w-[1440px] mx-auto px-6 md:px-12 py-12 md:py-16">
+      <section class="mb-20 md:mb-24">
+        <h1 class="font-serif font-black text-5xl md:text-6xl tracking-tighter text-stone-900 mb-8">
+          The Library.
+        </h1>
+        <div class="relative group">
+          <label for="post-search" class="sr-only">Search posts</label>
+          <input
+            id="post-search"
+            type="search"
+            placeholder="Search for ingredients, products, or rooms..."
+            class="w-full bg-stone-100 stark-border-thick px-6 md:px-8 py-5 md:py-6 pr-20 text-xl md:text-2xl font-medium focus:outline-none focus:ring-4 focus:ring-stone-200 transition-all rounded-sm placeholder:text-stone-400"
+            autocomplete="off"
+          >
+          <div class="absolute right-6 top-1/2 -translate-y-1/2 text-stone-400 group-focus-within:text-stone-900 transition-colors" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap gap-3 mt-8" aria-label="Filter posts by category">
+          <button type="button" class="post-filter bg-stone-900 text-white px-5 py-2 rounded-full text-xs font-bold uppercase tracking-widest" data-filter="all" aria-pressed="true">All Guides</button>
+          {{ range ($categories | uniq | sort) }}
+            <button type="button" class="post-filter bg-stone-100 hover:bg-stone-200 text-stone-600 hover:text-stone-900 px-5 py-2 rounded-full text-xs font-bold uppercase tracking-widest transition-colors" data-filter="{{ . | urlize }}" aria-pressed="false">{{ . }}</button>
+          {{ end }}
+        </div>
+      </section>
+
+      <section class="post-section mb-24" data-section="latest">
+        <div class="flex items-end justify-between mb-12">
+          <h2 class="font-serif font-black text-5xl tracking-tighter uppercase italic">Latest Thinking</h2>
+          <div class="h-1 bg-stone-900 flex-grow mx-8 mb-4 hidden sm:block"></div>
+        </div>
+
+        <div class="asymmetric-grid gap-12">
+          {{ range first 1 $posts }}
+            <article class="post-card col-span-12 lg:col-span-8 group" data-title="{{ .Title | lower }}" data-description="{{ .Description | lower }}" data-category="{{ .Params.category | urlize }}">
+              <a href="{{ .RelPermalink }}" class="block no-underline">
+                <div class="relative mb-6 border-[3px] border-stone-900 overflow-hidden aspect-[16/9] bg-stone-100">
+                  {{ with .Params.image }}<img src="{{ . }}" alt="" class="w-full h-full object-cover painterly-filter transition-transform duration-700 group-hover:scale-105">{{ end }}
+                  <div class="absolute top-4 left-4 bg-white border-2 border-stone-900 px-4 py-1 font-bold text-xs uppercase tracking-widest">Latest</div>
+                </div>
+                <div class="max-w-2xl">
+                  <span class="text-xs font-bold text-stone-500 uppercase tracking-widest mb-4 block">{{ .Params.category }}</span>
+                  <h3 class="font-serif font-black text-4xl md:text-5xl leading-tight text-stone-900 mb-4 group-hover:underline decoration-4 underline-offset-4">{{ .Title }}</h3>
+                  <p class="text-xl text-stone-600 leading-relaxed">{{ .Description }}</p>
+                </div>
+              </a>
+            </article>
+          {{ end }}
+
+          <div class="col-span-12 lg:col-span-4 flex flex-col gap-12">
+            {{ range first 2 (after 1 $posts) }}
+              <article class="post-card group" data-title="{{ .Title | lower }}" data-description="{{ .Description | lower }}" data-category="{{ .Params.category | urlize }}">
+                <a href="{{ .RelPermalink }}" class="block no-underline">
+                  <div class="relative mb-4 border-[3px] border-stone-900 overflow-hidden aspect-square bg-stone-100">
+                    {{ with .Params.image }}<img src="{{ . }}" alt="" class="w-full h-full object-cover painterly-filter transition-transform duration-700 group-hover:scale-105">{{ end }}
+                  </div>
+                  <span class="text-xs font-bold text-stone-500 uppercase tracking-widest mb-2 block">{{ .Params.category }}</span>
+                  <h3 class="font-serif font-black text-2xl leading-tight text-stone-900 group-hover:underline decoration-2 underline-offset-2">{{ .Title }}</h3>
+                </a>
+              </article>
+            {{ end }}
+          </div>
+        </div>
+      </section>
+
+      <section class="post-section border-t-[3px] border-stone-900 pt-16" data-section="library">
+        <h2 class="font-serif font-black text-4xl mb-12 uppercase tracking-tighter">Library of Defaults</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {{ range after 3 $posts }}
+            <article class="post-card border-t border-stone-200 pt-6 group" data-title="{{ .Title | lower }}" data-description="{{ .Description | lower }}" data-category="{{ .Params.category | urlize }}">
+              <a href="{{ .RelPermalink }}" class="block no-underline">
+                <div class="aspect-[3/4] mb-4 border-2 border-stone-900 overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-500 bg-stone-100">
+                  {{ with .Params.image }}<img src="{{ . }}" alt="" class="w-full h-full object-cover">{{ end }}
+                </div>
+                <span class="text-[10px] font-black text-stone-400 uppercase tracking-widest">{{ .Date.Format "Jan 2, 2006" }} / {{ .ReadingTime }} min read</span>
+                <h3 class="font-serif font-bold text-xl mt-2 group-hover:text-stone-600 transition-colors">{{ .Title }}</h3>
+              </a>
+            </article>
+          {{ end }}
+        </div>
+      </section>
+
+      <p id="no-post-results" class="hidden mt-12 border-2 border-stone-900 bg-stone-100 px-6 py-5 text-lg font-bold text-stone-700">
+        No posts match this search.
+      </p>
     </main>
+
+    <footer class="bg-stone-900 text-stone-100 mt-24 pt-20 pb-12 px-6 md:px-12 border-t-8 border-stone-950">
+      <div class="max-w-[1440px] mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-16">
+          <div class="lg:col-span-2 pr-8">
+            <h2 class="font-serif font-black text-5xl uppercase tracking-tighter leading-none mb-6">
+              Good<br>Default
+            </h2>
+            <p class="text-stone-400 text-lg max-w-md mb-8">
+              The searchable catalog of better household defaults. Research-backed, zero sponsored content.
+            </p>
+          </div>
+          <div>
+            <h4 class="font-bold uppercase tracking-widest text-sm text-stone-500 mb-6">Directory</h4>
+            <ul class="space-y-4 text-stone-300 font-medium">
+              <li><a href="/" class="hover:text-white transition-colors">Start Here</a></li>
+              <li><a href="/p/" class="hover:text-white transition-colors">Posts</a></li>
+              <li><a href="/#method" class="hover:text-white transition-colors">Methodology</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold uppercase tracking-widest text-sm text-stone-500 mb-6">Tools</h4>
+            <ul class="space-y-4 text-stone-300 font-medium">
+              <li><a href="/catalog/" class="hover:text-white transition-colors">Catalog</a></li>
+              <li><a href="/compare/" class="hover:text-white transition-colors">Compare</a></li>
+              <li><a href="/llms.txt" class="hover:text-white transition-colors">LLMs.txt</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-stone-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-stone-500 font-medium">
+          <p>&copy; {{ now.Format "2006" }} Good Default. All rights reserved.</p>
+          <div class="flex gap-6">
+            <a href="/robots.txt" class="hover:text-white transition-colors">Robots</a>
+            <a href="/sitemap.xml" class="hover:text-white transition-colors">Sitemap</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      (() => {
+        const searchInput = document.querySelector("#post-search");
+        const filters = Array.from(document.querySelectorAll(".post-filter"));
+        const cards = Array.from(document.querySelectorAll(".post-card"));
+        const sections = Array.from(document.querySelectorAll(".post-section"));
+        const noResults = document.querySelector("#no-post-results");
+        let activeFilter = "all";
+
+        const updateFilterStyles = () => {
+          filters.forEach((button) => {
+            const isActive = button.dataset.filter === activeFilter;
+            button.setAttribute("aria-pressed", String(isActive));
+            button.classList.toggle("bg-stone-900", isActive);
+            button.classList.toggle("text-white", isActive);
+            button.classList.toggle("bg-stone-100", !isActive);
+            button.classList.toggle("text-stone-600", !isActive);
+          });
+        };
+
+        const applyFilters = () => {
+          const query = searchInput.value.trim().toLowerCase();
+          let visibleCount = 0;
+
+          cards.forEach((card) => {
+            const matchesFilter = activeFilter === "all" || card.dataset.category === activeFilter;
+            const haystack = `${card.dataset.title || ""} ${card.dataset.description || ""} ${card.dataset.category || ""}`;
+            const matchesSearch = !query || haystack.includes(query);
+            const isVisible = matchesFilter && matchesSearch;
+            card.classList.toggle("is-hidden", !isVisible);
+            if (isVisible) visibleCount += 1;
+          });
+
+          sections.forEach((section) => {
+            section.classList.toggle("is-hidden", !section.querySelector(".post-card:not(.is-hidden)"));
+          });
+
+          noResults.classList.toggle("hidden", visibleCount !== 0);
+          updateFilterStyles();
+        };
+
+        filters.forEach((button) => {
+          button.addEventListener("click", () => {
+            activeFilter = button.dataset.filter;
+            applyFilters();
+          });
+        });
+
+        searchInput.addEventListener("input", applyFilters);
+        applyFilters();
+      })();
+    </script>
   </body>
 </html>
