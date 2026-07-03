@@ -69,17 +69,17 @@ Instead of aiming for perfection, I’m aiming for a home that supports my famil
 
 **🥣 Food Storage:**
 
-- Glass containers. You can repurpose glass jars from pickles and pasta sauce for a no-cost storage option, or invest in a set of oven-and-microwave-safe glass containers. My favorites are the Rubbermaid Brilliance Glass Food Storage Containers because the lids are interchangeable between all sizes. The lids are made from StainShield™ (Tritan™) plastic, which is free of bisphenols, phthalates, and PFAS. (I still don’t let my food touch them though.)
+- Glass containers. You can repurpose glass jars from pickles and pasta sauce for a no-cost storage option, or invest in a set of oven-and-microwave-safe glass containers. My favorites are the [Rubbermaid Brilliance Glass Food Storage Containers](https://www.amazon.com/Rubbermaid-Brilliance-Storage-Containers-Pieces/dp/B08BR9HBZ3) because the lids are interchangeable between all sizes. The lids are made from StainShield™ (Tritan™) plastic, which is free of bisphenols, phthalates, and PFAS. (I still don’t let my food touch them though.)
 
-- Microwave-safe steel? Yes! For taking lunch to go, I love this microwaveable stainless steel lunch box.
+- Microwave-safe steel? Yes! For taking lunch to go, I love this [microwaveable stainless steel lunch box](https://www.amazon.com/BLACK-BLUM-Microwavable-Stainless-Steel/dp/B0BYPF5TV8).
 
 **🍼 Baby & Kid Items:**
 
-- Replace plastic baby bottles with a [Mason Bottle nipple top](https://amzn.to/43FD5QV). Compatible with any Regular Mouth Mason jar, these Made in USA nipple tops are medical-grade silicone and easy to clean. Part of a modular system that grows with your kid:
+- Replace plastic baby bottles with a [Mason Bottle nipple top](https://amzn.to/43FD5QV). Compatible with any [Regular Mouth Mason jar](https://amzn.to/4kcM2I7), these Made in USA nipple tops are medical-grade silicone and easy to clean. Part of a modular system that grows with your kid:
 
-- [Mason Bottle straw top cups](https://amzn.to/4jWYCdH) for older kids. These tops are compatible with any stainless steel or glass mason jars, and the straws are medical-grade silicone.
+- [Mason Bottle straw top cups](https://amzn.to/4jWYCdH) for older kids. These tops are compatible with any stainless steel or [glass mason jars](https://amzn.to/4kcM2I7), and the straws are medical-grade silicone.
 
-- Stainless steel bento boxes or divided trays make great kid plates. They’re shatterproof, and a matching lid makes storing leftovers easy.
+- Stainless steel bento boxes or [divided trays](https://ahimsahome.com/collections/plates) make great kid plates. They’re shatterproof, and a matching lid makes storing leftovers easy.
 
 - This [stainless steel utensil set for babies and toddlers](https://amzn.to/3YfamQD) is Made in USA and includes a feeder spoon (for you to spoon feed) and self-feeding spoon and fork, for when baby is ready to try it on their own!
 
@@ -89,13 +89,13 @@ Instead of aiming for perfection, I’m aiming for a home that supports my famil
 
 - One of my favorite cooking utensils is this remarkably simple and comfortable Made in USA [stainless steel cook’s spoon](https://amzn.to/446TNdn). My second favorite is this [unusual little server spoon](https://amzn.to/4lTw1b2), also Made in USA, that does as great a job cooking ground meat as it does serving casserole. Options abound for ladles, tongs, and turners too. Just make sure it’s all stainless steel, without aluminum (which can’t go in the dishwasher) or plastic handles.
 
-- When you need a gentler touch, wood cooking utensils are an excellent alternative to steel. Make sure they’re uncoated (no varnish or paint that could get in your food) and treat them weekly with grass-fed beef tallow or beeswax. This quirky but surprisingly useful cowboy spatula is Made in USA (Texas, of course) from mesquite or pecan wood.
+- When you need a gentler touch, wood cooking utensils are an excellent alternative to steel. Make sure they’re uncoated (no varnish or paint that could get in your food) and treat them weekly with grass-fed beef tallow or beeswax. This quirky but surprisingly useful [cowboy spatula](https://cowboyspatula.com/collections/frontpage) is Made in USA (Texas, of course) from mesquite or pecan wood.
 
-- For ease of use and cleanup, I swear by stainless steel cookware. Heritage x Eater stainless steel cookware is Made in USA and will last you generations. You can transition to these heirloom pieces over time, starting with your most-used pot or pan.
+- For ease of use and cleanup, I swear by stainless steel cookware. [Heritage x Eater stainless steel cookware](https://www.heritagesteel.us/collections/eater-series) is Made in USA and will last you generations. You can transition to these heirloom pieces over time, starting with your most-used pot or pan.
 
 - If you need nonstick cookware, the [Titanium Pro line from Our Place](https://amzn.to/4dwlPBL) is a very impressive no-coating invention! Its nonstick properties come from the pattern impressed into the titanium interior and work very well without any PFAS or Teflon. The largest 12.5” fry pan will handle everything from a family-size batch of eggs to weeknight dinners for a crowd.
 
-- When it comes to baking, I love glass bakeware like this surprisingly inexpensive [10-piece Made in USA set from Anchor Hocking](https://amzn.to/3YjWWTp).
+- When it comes to baking, I love [glass bakeware like this surprisingly inexpensive 10-piece Made in USA set from Anchor Hocking](https://amzn.to/3YjWWTp).
 
 ## A Gentle Reminder: It’s OK to Transition Slowly
 
@@ -103,13 +103,13 @@ You don’t have to throw everything away today. Instead, transition at a speed 
 
 Start with the things that touch heat or fat. Those accelerate leaching and are worth prioritizing:
 
-- Microwave containers → Glass containers
+- Microwave containers → [Glass containers](https://www.amazon.com/Rubbermaid-Brilliance-Storage-Containers-Pieces/dp/B08BR9HBZ3)
 
-- Coffee cups with plastic lids → Stainless steel or glass Mason jars
+- Coffee cups with plastic lids → Stainless steel or [glass Mason jars](https://amzn.to/4kcM2I7)
 
-- Non-stick (Teflon or PFAS-coated) pans → Stainless steel pan
+- Non-stick (Teflon or PFAS-coated) pans → [Stainless steel pan](https://www.heritagesteel.us/collections/eater-series)
 
-- Plastic baby bottles or sippy cups → Stainless steel or glass jar with a Mason Bottle straw or nipple top
+- Plastic baby bottles or sippy cups → Stainless steel or glass jar with a [Mason Bottle straw](https://amzn.to/4jWYCdH) or [nipple top](https://amzn.to/43FD5QV)
 
 ## If You Take One Thing Away From This Post...
 

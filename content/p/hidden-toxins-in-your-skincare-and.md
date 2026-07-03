@@ -95,7 +95,7 @@ Did you know? The skin is not just a barrier—it’s a sponge. If you wouldn’
 
 For a full, searchable list of the non-toxic products my family uses, check out [GoodDefault.com](/)! I only recommend the products that we use and love–and I keep this list updated each time I find a new swap.
 
-Natural deodorant instead of antiperspirant: Look for solid sticks with essential oils or gentle formulas free from baking soda and fragrance blends. For a ridiculously simple deodorant option, try a “salt stick” crystal deodorant.
+Natural deodorant instead of antiperspirant: Look for solid sticks with essential oils or gentle formulas free from baking soda and fragrance blends. For a ridiculously simple deodorant option, try a [“salt stick” crystal deodorant](https://www.amazon.com/Crystal-Mineral-Deodorant-Stick-Unscented/dp/B000L978FU).
 
 Floss: Use plant waxed silk or charcoal floss without PFAS coatings. My favorites are these [BPA, PFAS, and PTFE-free floss picks](https://amzn.to/3YnDbu6).
 

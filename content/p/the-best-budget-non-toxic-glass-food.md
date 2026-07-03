@@ -35,7 +35,7 @@ Baby Food & Toddler Drinks
 
 Meat Purees: When I started making pureed salmon and beef for my then six-month-old, I used the 4 oz jelly jars to store and feed. Baby gets a great view of his food and no plastic leaching into it.
 
-Mason Bottle Straw Tops: This [platinum medical-grade silicone straw top](https://amzn.to/45IGUa4) is a staple in our house. I put it on an 8 oz regular mouth jar (which hasn’t broken yet, despite being dropped from table height–twice! But if you don’t want to give your toddler glass, they also have a [stainless steel jar](https://amzn.to/4jWYCdH)).
+[Mason Bottle Straw Tops](https://amzn.to/45IGUa4): This platinum medical-grade silicone straw top is a staple in our house. I put it on an 8 oz regular mouth jar (which hasn’t broken yet, despite being dropped from table height–twice! But if you don’t want to give your toddler glass, they also have a [stainless steel jar](https://amzn.to/4jWYCdH)).
 
 Beverages & Hydration
 
@@ -45,7 +45,7 @@ Infused Water: Drop in a sprig of rosemary or a few berries into a half-gallon (
 
 Pantry Storage
 
-Dry Goods: For items like coffee, salt, or spices, Mason Jars keep everything visible, organized, and airtight.
+Dry Goods: For items like coffee, salt, or spices, [Mason Jars](https://amzn.to/4kcM2I7) keep everything visible, organized, and airtight.
 
 I love these [one-piece stainless steel lids](https://amzn.to/3F9d04a) for everything–from storing pantry goods to refrigerating leftovers to freezing baby food.
 
@@ -89,7 +89,7 @@ Instant Reusability. Every glass jar or bottle you buy becomes tomorrow’s stor
 
 ## Your Glass Storage Action Plan
 
-With Mason Jars (new or repurposed) and foods already sold in glass, you eliminate hidden plastics, preserve flavor, and you can build a low or no-cost, non-toxic food storage system that grows organically alongside your grocery routine. Plus, glass reinforces a real-food kitchen: no off-flavors, no warping, no toxic leaching.
+With [Mason Jars](https://amzn.to/4kcM2I7) (new or repurposed) and foods already sold in glass, you eliminate hidden plastics, preserve flavor, and you can build a low or no-cost, non-toxic food storage system that grows organically alongside your grocery routine. Plus, glass reinforces a real-food kitchen: no off-flavors, no warping, no toxic leaching.
 
 Here are a few suggested steps for making this your reality:
 
