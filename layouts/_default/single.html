@@ -17,6 +17,113 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700;9..144,900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+      body,
+      .font-sans {
+        font-family: "Inter", sans-serif;
+      }
+
+      .font-serif,
+      .post-content h2,
+      .post-content h3,
+      .post-content h4 {
+        font-family: "Fraunces", serif;
+      }
+
+      .post-content {
+        color: #292524;
+        font-size: 1.18rem;
+        line-height: 1.8;
+      }
+
+      .post-content > * + * {
+        margin-top: 1.45rem;
+      }
+
+      .post-content h2 {
+        color: #292524;
+        font-size: clamp(2.7rem, 7vw, 4.8rem);
+        font-weight: 900;
+        letter-spacing: 0;
+        line-height: 0.98;
+        margin-top: 4.25rem;
+        margin-bottom: 1.35rem;
+      }
+
+      .post-content h3 {
+        color: #292524;
+        font-size: clamp(2.1rem, 5vw, 3.4rem);
+        font-weight: 900;
+        letter-spacing: 0;
+        line-height: 1.02;
+        margin-top: 3.25rem;
+        margin-bottom: 1.1rem;
+      }
+
+      .post-content h4 {
+        color: #292524;
+        font-size: 1.55rem;
+        font-weight: 900;
+        line-height: 1.15;
+        margin-top: 2.75rem;
+      }
+
+      .post-content p {
+        margin: 1.35rem 0;
+      }
+
+      .post-content ul,
+      .post-content ol {
+        margin: 1.5rem 0 2rem;
+        padding-left: 1.7rem;
+      }
+
+      .post-content li {
+        margin: 0.7rem 0;
+        padding-left: 0.35rem;
+      }
+
+      .post-content li p {
+        margin: 0;
+      }
+
+      .post-content ul {
+        list-style: disc;
+      }
+
+      .post-content ol {
+        list-style: decimal;
+      }
+
+      .post-content a {
+        color: #292524;
+        font-weight: 700;
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 0.16em;
+      }
+
+      .post-content strong {
+        font-weight: 800;
+      }
+
+      .post-content img {
+        border: 2px solid #1c1917;
+        margin: 2rem 0;
+      }
+
+      @media (max-width: 640px) {
+        .post-content {
+          font-size: 1.05rem;
+          line-height: 1.75;
+        }
+
+        .post-content ul,
+        .post-content ol {
+          padding-left: 1.35rem;
+        }
+      }
+    </style>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -33,17 +140,42 @@
     </script>
   </head>
   <body class="font-sans antialiased bg-[#fdfdfb] text-stone-900 selection:bg-stone-200 selection:text-stone-900">
-    <header class="px-6 md:px-12 py-6 border-b-4 border-stone-900 bg-[#fdfdfb]">
-      <div class="max-w-[1180px] mx-auto flex flex-col sm:flex-row justify-between gap-4 sm:items-end">
-        <a href="/" class="font-serif font-black text-4xl uppercase tracking-tighter leading-[0.85] no-underline">Good<br>Default</a>
-        <nav class="flex flex-wrap gap-5 text-xs font-black uppercase tracking-widest text-stone-500">
-          <a href="/p/" class="hover:text-stone-900">Posts</a>
-          <a href="/catalog/" class="hover:text-stone-900">Catalog</a>
-          <a href="/compare/" class="hover:text-stone-900">Compare</a>
-          <a href="/#method" class="hover:text-stone-900">Method</a>
-        </nav>
+    <div class="bg-stone-900 text-stone-100 text-xs py-2 px-6 text-center tracking-widest uppercase font-semibold">
+      Research notes for better household defaults. Zero sponsored placements.
+    </div>
+
+    <header class="px-6 md:px-12 py-8 border-b-4 border-stone-900 flex flex-col md:flex-row justify-between items-center md:items-end gap-6 bg-[#fdfdfb] relative z-20">
+      <a href="/" class="block text-center md:text-left group">
+        <div class="font-serif font-black text-4xl md:text-5xl uppercase tracking-tighter leading-[0.85] text-stone-900 group-hover:text-stone-700 transition-colors">
+          Good<br>Default
+        </div>
+      </a>
+      <div class="flex items-center gap-4">
+        <a
+          href="/catalog/"
+          aria-label="Open catalog"
+          class="w-10 h-10 rounded-full border border-stone-300 flex items-center justify-center text-stone-900 hover:bg-stone-100 transition-colors"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+        </a>
+        <a
+          href="/catalog/"
+          class="bg-stone-900 text-stone-50 px-6 py-2.5 rounded-full text-sm font-bold tracking-wide hover:bg-stone-700 transition-colors"
+        >
+          Open Catalog
+        </a>
       </div>
     </header>
+
+    <nav class="border-b border-stone-200 bg-[#fdfdfb] sticky top-0 z-10">
+      <ul class="flex items-center gap-8 overflow-x-auto px-6 md:px-12 py-4 text-xs md:text-sm font-bold uppercase tracking-widest text-stone-500 whitespace-nowrap max-w-[1440px] mx-auto">
+        <li><a href="/" class="hover:text-stone-900 transition-colors">Start Here</a></li>
+        <li><a href="/p/" class="text-stone-900 border-b-2 border-stone-900 pb-1">Posts</a></li>
+        <li><a href="/catalog/" class="hover:text-stone-900 transition-colors">Catalog</a></li>
+        <li><a href="/compare/" class="hover:text-stone-900 transition-colors">Compare</a></li>
+        <li><a href="/#method" class="hover:text-stone-900 transition-colors">Method</a></li>
+      </ul>
+    </nav>
 
     <main class="max-w-[900px] mx-auto px-6 md:px-12 py-12 md:py-20">
       <article>
@@ -54,7 +186,7 @@
         {{ with .Params.image }}
           <img src="{{ . }}" alt="" class="w-full aspect-[4/3] object-cover border-2 border-stone-900 mb-12 bg-white">
         {{ end }}
-        <div class="prose prose-stone prose-lg md:prose-xl max-w-none prose-headings:font-serif prose-headings:font-black prose-headings:tracking-tight prose-a:font-bold prose-a:text-stone-900 prose-img:border-2 prose-img:border-stone-900">
+        <div class="post-content max-w-none">
           {{ .Content }}
         </div>
       </article>

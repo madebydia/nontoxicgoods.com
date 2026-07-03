@@ -218,7 +218,7 @@
           {{ range after 3 $posts }}
             <article class="post-card border-t border-stone-200 pt-6 group" data-title="{{ .Title | lower }}" data-description="{{ .Description | lower }}" data-category="{{ .Params.category | urlize }}">
               <a href="{{ .RelPermalink }}" class="block no-underline">
-                <div class="aspect-[3/4] mb-4 border-2 border-stone-900 overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-500 bg-stone-100">
+                <div class="aspect-[3/4] mb-4 border-2 border-stone-900 overflow-hidden transition-all duration-500 bg-stone-100">
                   {{ with .Params.image }}<img src="{{ . }}" alt="" class="w-full h-full object-cover">{{ end }}
                 </div>
                 <span class="text-[10px] font-black text-stone-400 uppercase tracking-widest">{{ .Date.Format "Jan 2, 2006" }} / {{ .ReadingTime }} min read</span>
