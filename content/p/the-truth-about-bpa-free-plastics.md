@@ -61,11 +61,11 @@ Instead of aiming for perfection, I’m aiming for a home that supports my famil
 
 **🥛 Tableware:**
 
-- Glass Ball Mason jars. These wide-mouth ones make excellent drinking glasses, and matching stainless steel lids make storing leftovers easy.
+- [Glass Ball Mason jars](https://amzn.to/4kcM2I7). These wide-mouth ones make excellent drinking glasses, and [matching stainless steel lids](https://amzn.to/3F9d04a) make storing leftovers easy.
 
-- Insulated stainless steel mugs like this one from Yeti. I replaced the plastic straw with this made-in-USA stainless steel straw.
+- Insulated stainless steel mugs like [this one from Yeti](https://amzn.to/43z9xV5). I replaced the plastic straw with this [made-in-USA stainless steel straw](https://amzn.to/4vg2E7j).
 
-- These Made in USA 18/10 stainless steel flatware sets will last generations. The American Industrial design has a beautiful matte finish that doesn’t show fingerprints or scratches.
+- These [Made in USA 18/10 stainless steel flatware sets](https://amzn.to/4lKqXWF) will last generations. The American Industrial design has a beautiful matte finish that doesn’t show fingerprints or scratches.
 
 **🥣 Food Storage:**
 
@@ -75,27 +75,27 @@ Instead of aiming for perfection, I’m aiming for a home that supports my famil
 
 **🍼 Baby & Kid Items:**
 
-- Replace plastic baby bottles with a Mason Bottle nipple top. Compatible with any Regular Mouth Mason jar, these Made in USA nipple tops are medical-grade silicone and easy to clean. Part of a modular system that grows with your kid:
+- Replace plastic baby bottles with a [Mason Bottle nipple top](https://amzn.to/43FD5QV). Compatible with any Regular Mouth Mason jar, these Made in USA nipple tops are medical-grade silicone and easy to clean. Part of a modular system that grows with your kid:
 
-- Mason Bottle straw top cups for older kids. These tops are compatible with any stainless steel or glass mason jars, and the straws are medical-grade silicone.
+- [Mason Bottle straw top cups](https://amzn.to/4jWYCdH) for older kids. These tops are compatible with any stainless steel or glass mason jars, and the straws are medical-grade silicone.
 
 - Stainless steel bento boxes or divided trays make great kid plates. They’re shatterproof, and a matching lid makes storing leftovers easy.
 
-- This stainless steel utensil set for babies and toddlers is Made in USA and includes a feeder spoon (for you to spoon feed) and self-feeding spoon and fork, for when baby is ready to try it on their own!
+- This [stainless steel utensil set for babies and toddlers](https://amzn.to/3YfamQD) is Made in USA and includes a feeder spoon (for you to spoon feed) and self-feeding spoon and fork, for when baby is ready to try it on their own!
 
 **🍲 Cookware:**
 
 - No plastic in the microwave. Ever. Heating plastic releases hormone-disrupting chemicals into foods, especially when in contact with fatty foods.
 
-- One of my favorite cooking utensils is this remarkably simple and comfortable Made in USA stainless steel cook’s spoon. My second favorite is this unusual little server spoon, also Made in USA, that does as great a job cooking ground meat as it does serving casserole. Options abound for ladles, tongs, and turners too. Just make sure it’s all stainless steel, without aluminum (which can’t go in the dishwasher) or plastic handles.
+- One of my favorite cooking utensils is this remarkably simple and comfortable Made in USA [stainless steel cook’s spoon](https://amzn.to/446TNdn). My second favorite is this [unusual little server spoon](https://amzn.to/4lTw1b2), also Made in USA, that does as great a job cooking ground meat as it does serving casserole. Options abound for ladles, tongs, and turners too. Just make sure it’s all stainless steel, without aluminum (which can’t go in the dishwasher) or plastic handles.
 
 - When you need a gentler touch, wood cooking utensils are an excellent alternative to steel. Make sure they’re uncoated (no varnish or paint that could get in your food) and treat them weekly with grass-fed beef tallow or beeswax. This quirky but surprisingly useful cowboy spatula is Made in USA (Texas, of course) from mesquite or pecan wood.
 
 - For ease of use and cleanup, I swear by stainless steel cookware. Heritage x Eater stainless steel cookware is Made in USA and will last you generations. You can transition to these heirloom pieces over time, starting with your most-used pot or pan.
 
-- If you need nonstick cookware, the Titanium Pro line from Our Place is a very impressive no-coating invention! Its nonstick properties come from the pattern impressed into the titanium interior and work very well without any PFAS or Teflon. The largest 12.5” fry pan will handle everything from a family-size batch of eggs to weeknight dinners for a crowd.
+- If you need nonstick cookware, the [Titanium Pro line from Our Place](https://amzn.to/4dwlPBL) is a very impressive no-coating invention! Its nonstick properties come from the pattern impressed into the titanium interior and work very well without any PFAS or Teflon. The largest 12.5” fry pan will handle everything from a family-size batch of eggs to weeknight dinners for a crowd.
 
-- When it comes to baking, I love glass bakeware like this surprisingly inexpensive 10-piece Made in USA set from Anchor Hocking.
+- When it comes to baking, I love glass bakeware like this surprisingly inexpensive [10-piece Made in USA set from Anchor Hocking](https://amzn.to/3YjWWTp).
 
 ## A Gentle Reminder: It’s OK to Transition Slowly
 

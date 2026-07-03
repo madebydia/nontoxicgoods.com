@@ -44,6 +44,6 @@ That’s it. Pure, nourishing care for your lips—no toxic ingredients, no endo
 
 While you can most certainly keep these simply wonderful balms all to yourself, making a batch of them makes for easy and thoughtful little gifts for birthdays, Easter baskets, or Christmas stockings!
 
-Don’t want to DIY? Check out the best tallow balms I’ve found on my family’s personal database site, [GoodDefault.com](/)!
+Don’t want to DIY? Check out the best tallow balms I’ve found, including [Vintage Tradition tallow lip balm](https://amzn.to/4dplccX) and [Bello Tallow skincare](https://www.bellotallow.com), on my family’s personal database site, [GoodDefault.com](/)!
 
 If you choose to make a purchase through some of the links on this page, I may receive a small thank-you commission as an Amazon affiliate—at no cost to you! Thank you for your support!
