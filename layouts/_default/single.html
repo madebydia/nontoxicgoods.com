@@ -204,6 +204,28 @@
     {{ if lt (len $relatedPosts) 2 }}
       {{ $relatedPosts = first 2 $candidatePosts }}
     {{ end }}
+    {{ $products := (resources.Get "catalog/products.json") | transform.Unmarshal }}
+    {{ $productImages := (resources.Get "catalog/product-images.json") | transform.Unmarshal }}
+    {{ $vettedPicks := slice }}
+    {{ range first 5 (.Params.picks | default (slice)) }}
+      {{ $targetKey := lower . }}
+      {{ range $products }}
+        {{ $name := index . "Name" }}
+        {{ $brand := index . "Brand" }}
+        {{ $category := index . "Category" }}
+        {{ $link := index . "Link" }}
+        {{ $madeIn := index . "Made In" }}
+        {{ $notes := index . "Notes" }}
+        {{ $rowKey := lower (printf "%s|%s|%s" $category $name $brand) }}
+        {{ if eq $rowKey $targetKey }}
+          {{ $image := "" }}
+          {{ with index $productImages $rowKey }}
+            {{ $image = printf "/%s" .src }}
+          {{ end }}
+          {{ $vettedPicks = $vettedPicks | append (dict "name" $name "brand" $brand "category" $category "link" $link "madeIn" $madeIn "notes" $notes "image" $image) }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
 
     <div class="bg-stone-900 text-stone-100 text-xs py-2 px-6 text-center tracking-widest uppercase font-semibold">
       Research notes for better household defaults. Zero sponsored placements.
@@ -268,18 +290,28 @@
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
         <aside class="lg:col-span-3 lg:border-r border-stone-200 lg:pr-12">
           <div class="lg:sticky lg:top-32">
-            <div class="mb-10">
-              <h4 class="text-[10px] uppercase tracking-[0.2em] font-bold text-stone-400 mb-4">Written By</h4>
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-full bg-stone-900 text-white border border-stone-300 flex items-center justify-center font-serif font-black text-sm">
-                  DP
-                </div>
-                <div>
-                  <p class="text-sm font-bold text-stone-900">{{ .Params.author | default site.Params.author }}</p>
-                  <p class="text-[11px] text-stone-500 font-medium">Founder &amp; Editor</p>
+            {{ if gt (len $vettedPicks) 0 }}
+              <div class="mb-10 pb-10 border-b border-stone-200">
+                <h4 class="text-[10px] uppercase tracking-[0.2em] font-black text-stone-400 mb-5">The Vetted Picks</h4>
+                <div class="space-y-5">
+                  {{ range $vettedPicks }}
+                    <a href="{{ .link }}" class="group grid grid-cols-[4.25rem_1fr] gap-4 items-center no-underline" target="_blank" rel="noopener">
+                      <div class="aspect-square rounded-sm border border-stone-200 bg-stone-50 overflow-hidden flex items-center justify-center">
+                        {{ if .image }}
+                          <img src="{{ .image }}" alt="" class="w-full h-full object-contain mix-blend-multiply p-1.5 transition-transform duration-300 group-hover:scale-105">
+                        {{ else }}
+                          <span class="px-2 text-center text-[10px] font-black uppercase tracking-wider text-stone-400">{{ .brand }}</span>
+                        {{ end }}
+                      </div>
+                      <div class="min-w-0">
+                        <p class="text-sm font-black text-stone-900 leading-tight group-hover:underline">{{ .name }}</p>
+                        <p class="text-xs font-semibold text-stone-500 mt-1 leading-snug">{{ .brand }}{{ with .madeIn }} &bull; Made in {{ . }}{{ end }}</p>
+                      </div>
+                    </a>
+                  {{ end }}
                 </div>
               </div>
-            </div>
+            {{ end }}
 
             <div class="mb-10">
               <h4 class="text-[10px] uppercase tracking-[0.2em] font-bold text-stone-400 mb-4">Reading Time</h4>
@@ -288,12 +320,18 @@
 
             <div class="mb-10">
               <h4 class="text-[10px] uppercase tracking-[0.2em] font-bold text-stone-400 mb-4">Share</h4>
-              <div class="flex gap-4">
-                <a href="mailto:?subject={{ .Title | urlquery }}&body={{ .Permalink | urlquery }}" aria-label="Share by email" class="text-stone-400 hover:text-stone-900 transition-colors">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+              <div class="grid grid-cols-2 gap-2">
+                <a href="https://twitter.com/intent/tweet?url={{ .Permalink | urlquery }}&text={{ .Title | urlquery }}" aria-label="Share on X" class="h-9 border border-stone-200 rounded-sm flex items-center justify-center text-sm font-black text-stone-600 hover:text-stone-900 hover:border-stone-900 transition-colors" target="_blank" rel="noopener">
+                  𝕏
                 </a>
-                <a href="{{ .Permalink }}" aria-label="Copy link from address bar" class="text-stone-400 hover:text-stone-900 transition-colors">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.07 0l2.83-2.83a5 5 0 0 0-7.07-7.07L11.5 4.43"></path><path d="M14 11a5 5 0 0 0-7.07 0L4.1 13.83a5 5 0 0 0 7.07 7.07l1.33-1.33"></path></svg>
+                <a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink | urlquery }}" aria-label="Share on Facebook" class="h-9 border border-stone-200 rounded-sm flex items-center justify-center text-sm font-black text-stone-600 hover:text-stone-900 hover:border-stone-900 transition-colors" target="_blank" rel="noopener">
+                  f
+                </a>
+                <a href="https://www.pinterest.com/pin/create/button/?url={{ .Permalink | urlquery }}&description={{ .Title | urlquery }}{{ with .Params.image }}&media={{ . | absURL | urlquery }}{{ end }}" aria-label="Share on Pinterest" class="h-9 border border-stone-200 rounded-sm flex items-center justify-center text-sm font-black text-stone-600 hover:text-stone-900 hover:border-stone-900 transition-colors" target="_blank" rel="noopener">
+                  P
+                </a>
+                <a href="mailto:?subject={{ .Title | urlquery }}&body={{ .Permalink | urlquery }}" aria-label="Share by email" class="h-9 border border-stone-200 rounded-sm flex items-center justify-center text-stone-600 hover:text-stone-900 hover:border-stone-900 transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
                 </a>
               </div>
             </div>

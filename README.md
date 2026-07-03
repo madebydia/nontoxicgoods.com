@@ -15,6 +15,7 @@ This repo is the continuation of the older household product catalog project, wi
 - `dark-mode.css` adds `prefers-color-scheme: dark` support across the site.
 - `data/products.csv` and `data/pfas-free-products.csv` contain the catalog seed data.
 - `data/product-images.json` maps catalog rows to local product images in `assets/products/`.
+- `scripts/sync-catalog-resources.py` mirrors catalog data into `assets/catalog/` for Hugo templates that render product picks.
 - `scripts/check-internal-links.py` checks generated links, anchors, assets, and product-image references.
 
 ## Domains
@@ -30,6 +31,7 @@ The repo includes `static/CNAME` for GitHub Pages.
 Build with Hugo:
 
 ```sh
+python3 scripts/sync-catalog-resources.py
 hugo --cleanDestinationDir
 hugo server --disableFastRender
 ```
@@ -41,6 +43,7 @@ Then open the local Hugo URL printed by the server.
 Run the generated-site link check before pushing:
 
 ```sh
+python3 scripts/sync-catalog-resources.py
 hugo --cleanDestinationDir --minify
 CHECK_ROOT=public python3 scripts/check-internal-links.py
 ```

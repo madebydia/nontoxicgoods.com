@@ -5,6 +5,12 @@ description: "Why “BPA-free” does not mean non-toxic, and the safer material
 author: "Diana Park"
 category: "Plastics"
 image: "/assets/posts/the-truth-about-bpa-free-plastics.jpg"
+picks:
+  - "Storage & Organization|Mason Jars|Ball"
+  - "Tableware|Insulated Stainless Steel Tumbler|Yeti"
+  - "Tableware|Stainless Steel Straw Set|Bywater Stainless"
+  - "Tableware|Stainless Steel Flatware|Liberty Tabletop"
+  - "Cookware|Stainless Steel Cook's Spoon|Rada Cutlery"
 ---
 
 For a while, it felt like every product from water bottles to baby toys was shouting one reassuring phrase: “BPA-free.”

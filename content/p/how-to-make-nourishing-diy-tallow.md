@@ -5,6 +5,9 @@ description: "A simple recipe for what your skin eats."
 author: "Diana Park"
 category: "DIY"
 image: "/assets/posts/tallow-lip-balm-shelf.jpg"
+picks:
+  - "Personal Care|Tallow Lip Balm|Vintage Tradition"
+  - "Personal Care|Tallow Skincare|Bello Tallow"
 ---
 
 Most lip balms on store shelves are a cocktail of petroleum byproducts, synthetic fragrance, and plastic-leaching packaging. But soft, healthy lips don’t need all that. This simple DIY tallow lip balm deeply nourishes with only a few whole, clean ingredients that are safe enough to eat, and with no hormone-disrupting chemicals included.
