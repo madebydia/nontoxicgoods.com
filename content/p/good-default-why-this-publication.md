@@ -29,6 +29,6 @@ I’m a former engineering director turned stay-at-home mom, which means I bring
 
 ## Start here
 
-If you’re new, these three posts cover the biggest wins first: Hidden Toxins in Your Skincare, The Truth About BPA-Free Plastics, and The Best Budget Glass Food Storage.
+If you’re new, these three posts cover the biggest wins first: [Hidden Toxins in Your Skincare](/p/hidden-toxins-in-your-skincare-and/), [The Truth About BPA-Free Plastics](/p/the-truth-about-bpa-free-plastics/), and [The Best Budget Glass Food Storage](/p/the-best-budget-non-toxic-glass-food/).
 
 Grace over guilt, always. You don’t have to fix your whole house this week — you just have to make the next swap.

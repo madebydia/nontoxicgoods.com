@@ -97,17 +97,17 @@ For a full, searchable list of the non-toxic products my family uses, check out 
 
 Natural deodorant instead of antiperspirant: Look for solid sticks with essential oils or gentle formulas free from baking soda and fragrance blends. For a ridiculously simple deodorant option, try a “salt stick” crystal deodorant.
 
-Floss: Use plant waxed silk or charcoal floss without PFAS coatings. My favorites are these BPA, PFAS, and PTFE-free floss picks.
+Floss: Use plant waxed silk or charcoal floss without PFAS coatings. My favorites are these [BPA, PFAS, and PTFE-free floss picks](https://amzn.to/3YnDbu6).
 
-Toothpaste: Try one made with non-nano hydroxyapatite (a fluoride alternative) and no artificial flavors, like this USA-made prebiotic mineral toothpaste.
+Toothpaste: Try one made with non-nano hydroxyapatite (a fluoride alternative) and no artificial flavors, like this [USA-made prebiotic mineral toothpaste](https://getsuperteeth.com/products/prebiotic-mineral-toothpaste-3-pack-bundle).
 
-Lip Care: Choose organic balms or lipsticks, and avoid “longwear” products. For a super simple and healthy lip balm, try my DIY tallow balm recipe!
+Lip Care: Choose organic balms or lipsticks, and avoid “longwear” products. For a super simple and healthy lip balm, try my [DIY tallow balm recipe](/p/how-to-make-nourishing-diy-tallow/)!
 
-Skincare: Look for unscented or essential oil–scented versions based on tallow, shea or cacao butter, or other nourishing whole ingredients that you’d also find in your kitchen pantry. My favorite supplier is Bello Tallow—most of their products are tested for PFAS.
+Skincare: Look for unscented or essential oil–scented versions based on tallow, shea or cacao butter, or other nourishing whole ingredients that you’d also find in your kitchen pantry. My favorite supplier is [Bello Tallow](https://www.bellotallow.com)—most of their products are tested for PFAS.
 
-Makeup: Start with brands that test for heavy metals and list every ingredient. EWG Verified brands like this one are a good place to start. Avoid “waterproof” or “24-hour wear” products which can include PFAS.
+Makeup: Start with brands that test for heavy metals and list every ingredient. EWG Verified brands like [BIOSSANCE](https://amzn.to/401dbWo) are a good place to start. Avoid “waterproof” or “24-hour wear” products which can include PFAS.
 
-Period Products: Opt for organic cotton pads or organic cotton tampons without applicators, or try reusable options like medical-grade silicone cups or washable cotton pads.
+Period Products: Opt for organic cotton pads or organic cotton tampons without applicators, or try reusable options like [medical-grade silicone cups](https://saalt.com/) or [washable cotton pads](https://periodaisle.com/).
 
 ## A Note on Mindset: Grace Over Guilt
 

@@ -23,7 +23,7 @@ Got a pantry full of plastic? Making the healthy swap to glass might be more aff
 
 ## Mason Jar: The Low-Cost Everyday Workhorse
 
-If there’s a poster child for glass food storage, it’s the classic Mason Jar. They can be easily bought online for less than a dollar a jar, or if you’re willing to do a little hunting, at local stores for less than that. Here are some ways to use them to quit plastic:
+If there’s a poster child for glass food storage, it’s the classic [Mason Jar](https://amzn.to/4kcM2I7). They can be easily bought online for less than a dollar a jar, or if you’re willing to do a little hunting, at local stores for less than that. Here are some ways to use them to quit plastic:
 
 Leftovers and Meal Prep
 
@@ -35,11 +35,11 @@ Baby Food & Toddler Drinks
 
 Meat Purees: When I started making pureed salmon and beef for my then six-month-old, I used the 4 oz jelly jars to store and feed. Baby gets a great view of his food and no plastic leaching into it.
 
-Mason Bottle Straw Tops: This platinum medical-grade silicone straw top is a staple in our house. I put it on an 8 oz regular mouth jar(which hasn’t broken yet, despite being dropped from table height–twice! But if you don’t want to give your toddler glass, they also have a stainless steel jar).
+Mason Bottle Straw Tops: This [platinum medical-grade silicone straw top](https://amzn.to/45IGUa4) is a staple in our house. I put it on an 8 oz regular mouth jar (which hasn’t broken yet, despite being dropped from table height–twice! But if you don’t want to give your toddler glass, they also have a [stainless steel jar](https://amzn.to/4jWYCdH)).
 
 Beverages & Hydration
 
-Water, Iced Coffee, Broth Sippers: Use a lid with a straw hole on a wide-mouth pint, quart jar, or stackable drinking glass for splash-proof hydration. Skip plastic completely with a Made in USA glass straw.
+Water, Iced Coffee, Broth Sippers: Use a lid with a straw hole on a wide-mouth pint, quart jar, or [stackable drinking glass](https://amzn.to/45rb6GC) for splash-proof hydration. Skip plastic completely with a [Made in USA stainless steel straw](https://amzn.to/4vg2E7j).
 
 Infused Water: Drop in a sprig of rosemary or a few berries into a half-gallon (64 oz) jar, fill with water, and let it steep in the fridge. No plastic floating around.
 
@@ -47,7 +47,7 @@ Pantry Storage
 
 Dry Goods: For items like coffee, salt, or spices, Mason Jars keep everything visible, organized, and airtight.
 
-I love these one-piece stainless steel lids for everything–from storing pantry goods to refrigerating leftovers to freezing baby food.
+I love these [one-piece stainless steel lids](https://amzn.to/3F9d04a) for everything–from storing pantry goods to refrigerating leftovers to freezing baby food.
 
 ## Repurposed Jars: A Zero-Cost Solution
 
