@@ -1,0 +1,22 @@
+# Good Default
+
+Good Default is a searchable catalog and article site for better household defaults: safer materials, practical product swaps, and affiliate-supported recommendations with zero sponsored placements.
+
+## Core Pages
+
+- Home: https://gooddefault.com/
+- Catalog: https://gooddefault.com/catalog/
+- Compare Products: https://gooddefault.com/compare/
+- Posts Archive: https://gooddefault.com/p/
+
+## Topics
+
+- Non-toxic household products
+- PFAS-free cookware, clothing, cleaning, baby gear, tableware, and home goods
+- Glass and stainless steel swaps for kitchens and kids
+- Personal care ingredient safety
+- Practical low-toxin swaps without panic or perfectionism
+
+## Commercial Model
+
+Good Default does not sell sponsored placements. Some product links are affiliate links, including Amazon links.

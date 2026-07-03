@@ -4,14 +4,16 @@
 from __future__ import annotations
 
 import json
+import os
 import sys
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlparse
 
 
-ROOT = Path(__file__).resolve().parents[1]
-HTML_FILES = sorted(ROOT.glob("*.html"))
+REPO_ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(os.environ.get("CHECK_ROOT", REPO_ROOT)).resolve()
+HTML_FILES = sorted(ROOT.rglob("*.html"))
 SKIP_SCHEMES = {"http", "https", "mailto", "tel", "javascript", "data"}
 
 

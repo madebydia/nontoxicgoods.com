@@ -11,6 +11,18 @@
     "src": "assets/products/baby-clek-fllo-convertible-car-seat-b935faac.jpg",
     "width": 600
   },
+  "baby|glass baby bottle diy kit|mason bottle": {
+    "height": 560,
+    "source": "user-supplied:2026-06-16",
+    "src": "assets/products/baby-mason-bottle-glass-baby-bottle-diy-kit-user-20260616.jpg",
+    "width": 550
+  },
+  "baby|breast milk storage jars|mason bottle": {
+    "height": 465,
+    "source": "user-supplied:2026-06-16",
+    "src": "assets/products/baby-mason-bottle-breast-milk-storage-jars-user-20260616.jpg",
+    "width": 365
+  },
   "baby|jordan knox convertible car seat|uppababy": {
     "height": 528,
     "source": "https://back.uppababy.com/media/95/6a/43/1762260707/BFCM25_TrendingNow_Teaser-US_Dark.webp?ts=1762892029",
@@ -840,10 +852,16 @@
     "width": 1445
   },
   "tableware|insulated stainless steel tumbler|yeti": {
-    "height": 1500,
-    "source": "user-supplied:2026-06-13",
-    "src": "assets/products/tableware-yeti-insulated-stainless-steel-tumbler-user-20260613.png",
-    "width": 731
+    "height": 600,
+    "source": "user-supplied:2026-06-16",
+    "src": "assets/products/tableware-yeti-insulated-stainless-steel-tumbler-user-20260616.jpg",
+    "width": 589
+  },
+  "tableware|stainless steel straw set|bywater stainless": {
+    "height": 550,
+    "source": "user-supplied:2026-06-16",
+    "src": "assets/products/tableware-bywater-stainless-steel-straw-set-user-20260616.jpg",
+    "width": 462
   },
   "tableware|silicone straw tops for mason jars (sippy cups)|mason bottle": {
     "height": 1500,

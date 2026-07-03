@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ .Title }} | Good Default</title>
+    <meta name="description" content="{{ .Description | default .Summary | plainify }}">
+    <link rel="canonical" href="{{ .Permalink }}">
+    <meta property="og:title" content="{{ .Title }}">
+    <meta property="og:description" content="{{ .Description | default .Summary | plainify }}">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="{{ .Permalink }}">
+    {{ with .Params.image }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
+    <link rel="icon" href="/assets/good-default-logo.png">
+    <link rel="stylesheet" href="/dark-mode.css">
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700;9..144,900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": {{ .Title | jsonify | safeJS }},
+        "description": {{ .Description | default .Summary | plainify | jsonify | safeJS }},
+        "datePublished": "{{ .Date.Format "2006-01-02" }}",
+        "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
+        "author": { "@type": "Person", "name": "{{ .Params.author | default site.Params.author }}" },
+        "publisher": { "@type": "Organization", "name": "Good Default", "url": "{{ site.BaseURL }}" },
+        "mainEntityOfPage": "{{ .Permalink }}"{{ with .Params.image }},
+        "image": "{{ . | absURL }}"{{ end }}
+      }
+    </script>
+  </head>
+  <body class="font-sans antialiased bg-[#fdfdfb] text-stone-900 selection:bg-stone-200 selection:text-stone-900">
+    <header class="px-6 md:px-12 py-6 border-b-4 border-stone-900 bg-[#fdfdfb]">
+      <div class="max-w-[1180px] mx-auto flex flex-col sm:flex-row justify-between gap-4 sm:items-end">
+        <a href="/" class="font-serif font-black text-4xl uppercase tracking-tighter leading-[0.85] no-underline">Good<br>Default</a>
+        <nav class="flex flex-wrap gap-5 text-xs font-black uppercase tracking-widest text-stone-500">
+          <a href="/p/" class="hover:text-stone-900">Posts</a>
+          <a href="/catalog/" class="hover:text-stone-900">Catalog</a>
+          <a href="/compare/" class="hover:text-stone-900">Compare</a>
+          <a href="/#method" class="hover:text-stone-900">Method</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="max-w-[900px] mx-auto px-6 md:px-12 py-12 md:py-20">
+      <article>
+        <p class="text-xs font-black uppercase tracking-[0.24em] text-stone-500 mb-4">{{ .Params.category | default "Guide" }}</p>
+        <h1 class="font-serif font-black text-5xl md:text-7xl leading-[0.95] tracking-tighter mb-5">{{ .Title }}</h1>
+        <p class="text-xl md:text-2xl font-bold text-stone-500 leading-relaxed mb-6">{{ .Description }}</p>
+        <p class="text-sm font-bold uppercase tracking-widest text-stone-400 mb-10">{{ .Date.Format "Jan 2, 2006" }} · {{ .Params.author | default site.Params.author }}</p>
+        {{ with .Params.image }}
+          <img src="{{ . }}" alt="" class="w-full aspect-[4/3] object-cover border-2 border-stone-900 mb-12 bg-white">
+        {{ end }}
+        <div class="prose prose-stone prose-lg md:prose-xl max-w-none prose-headings:font-serif prose-headings:font-black prose-headings:tracking-tight prose-a:font-bold prose-a:text-stone-900 prose-img:border-2 prose-img:border-stone-900">
+          {{ .Content }}
+        </div>
+      </article>
+    </main>
+
+    <footer class="bg-stone-900 text-stone-100 mt-20 px-6 md:px-12 py-10">
+      <div class="max-w-[1180px] mx-auto flex flex-col sm:flex-row justify-between gap-4 text-sm font-bold">
+        <p>© 2026 Good Default. Affiliate-supported. Zero sponsored placements.</p>
+        <a href="/p/" class="text-stone-300 hover:text-white">All Posts</a>
+      </div>
+    </footer>
+  </body>
+</html>

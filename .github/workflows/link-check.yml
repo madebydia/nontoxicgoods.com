@@ -17,5 +17,14 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Check internal links and assets
-        run: python3 scripts/check-internal-links.py
+      - name: Set up Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: "0.163.0"
+          extended: true
+
+      - name: Build Hugo site
+        run: hugo --cleanDestinationDir --minify
+
+      - name: Check generated internal links and assets
+        run: CHECK_ROOT=public python3 scripts/check-internal-links.py

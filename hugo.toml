@@ -1,0 +1,37 @@
+baseURL = "https://gooddefault.com/"
+locale = "en_US"
+title = "Good Default"
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term"]
+summaryLength = 32
+
+[params]
+  description = "A searchable catalog of better household defaults, safer swaps, practical research, and zero sponsored placements."
+  author = "Diana Park"
+  images = ["/assets/gooddefault.png"]
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[module]
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+  [[module.mounts]]
+    source = "layouts"
+    target = "layouts"
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+  [[module.mounts]]
+    source = "assets"
+    target = "static/assets"
+  [[module.mounts]]
+    source = "data"
+    target = "static/data"

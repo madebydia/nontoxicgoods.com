@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Compare Products | Good Default</title>
     <meta name="description" content="Compare similar Good Default catalog items by category, materials notes, origin, and practical fit.">
-    <link rel="icon" href="assets/good-default-logo.png">
+    <link rel="icon" href="/assets/good-default-logo.png">
     <script src="https://cdn.tailwindcss.com/3.4.17"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700;9..144,900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="dark-mode.css">
+    <link rel="stylesheet" href="/dark-mode.css">
     <!-- Privacy-friendly analytics by Plausible -->
     <script async src="https://plausible.io/js/pa-6VzYHY6KNdTQPoQIRQwuo.js"></script>
     <script>
@@ -53,28 +53,28 @@
     </div>
 
     <header class="px-6 md:px-12 py-8 border-b-4 border-stone-900 flex flex-col md:flex-row justify-between items-center md:items-end gap-6 bg-brand-bg relative z-20">
-      <a href="./" class="block text-center md:text-left group">
+      <a href="/" class="block text-center md:text-left group">
         <h1 class="font-serif font-black text-4xl md:text-5xl uppercase tracking-tighter leading-[0.85] text-stone-900 group-hover:text-stone-700 transition-colors">
           Good<br>Default
         </h1>
       </a>
       <div class="flex items-center gap-4">
-        <a href="catalog.html" class="border border-stone-300 text-stone-900 px-5 py-2.5 rounded-full text-sm font-bold tracking-wide hover:bg-stone-100 transition-colors">
+        <a href="/catalog/" class="border border-stone-300 text-stone-900 px-5 py-2.5 rounded-full text-sm font-bold tracking-wide hover:bg-stone-100 transition-colors">
           Catalog
         </a>
-        <a href="https://blog.gooddefault.com/" class="bg-stone-900 text-stone-50 px-6 py-2.5 rounded-full text-sm font-bold tracking-wide hover:bg-stone-700 transition-colors">
-          Subscribe
+        <a href="/p/" class="bg-stone-900 text-stone-50 px-6 py-2.5 rounded-full text-sm font-bold tracking-wide hover:bg-stone-700 transition-colors">
+          Read Posts
         </a>
       </div>
     </header>
 
     <nav class="border-b border-stone-200 bg-brand-bg sticky top-0 z-10">
       <ul class="flex items-center gap-8 overflow-x-auto no-scrollbar px-6 md:px-12 py-4 text-xs md:text-sm font-bold uppercase tracking-widest text-stone-500 whitespace-nowrap max-w-[1600px] mx-auto">
-        <li><a href="./" class="hover:text-stone-900 transition-colors">Start Here</a></li>
-        <li><a href="catalog.html" class="hover:text-stone-900 transition-colors">Catalog</a></li>
-        <li><a href="compare.html" class="text-stone-900 border-b-2 border-stone-900 pb-1">Compare</a></li>
+        <li><a href="/" class="hover:text-stone-900 transition-colors">Start Here</a></li>
+        <li><a href="/catalog/" class="hover:text-stone-900 transition-colors">Catalog</a></li>
+        <li><a href="/compare/" class="text-stone-900 border-b-2 border-stone-900 pb-1">Compare</a></li>
         <li><a href="./#method" class="hover:text-stone-900 transition-colors">Method</a></li>
-        <li><a href="https://blog.gooddefault.com/" class="hover:text-stone-900 transition-colors">Substack</a></li>
+        <li><a href="/p/" class="hover:text-stone-900 transition-colors">Posts</a></li>
       </ul>
     </nav>
 
@@ -126,9 +126,9 @@
           </p>
         </div>
         <div class="flex flex-wrap gap-6 text-sm font-bold uppercase tracking-widest text-stone-400">
-          <a href="./" class="hover:text-white transition-colors">Home</a>
-          <a href="catalog.html" class="hover:text-white transition-colors">Catalog</a>
-          <a href="https://blog.gooddefault.com/" class="hover:text-white transition-colors">Substack</a>
+          <a href="/" class="hover:text-white transition-colors">Home</a>
+          <a href="/catalog/" class="hover:text-white transition-colors">Catalog</a>
+          <a href="/p/" class="hover:text-white transition-colors">Posts</a>
         </div>
       </div>
     </footer>
@@ -371,9 +371,9 @@
       });
 
       Promise.all([
-        fetch("data/products.csv", { cache: "no-store" }).then((response) => response.text()),
-        fetch("data/pfas-free-products.csv", { cache: "no-store" }).then((response) => response.text()),
-        fetch("data/product-images.json", { cache: "no-store" }).then((response) => response.ok ? response.json() : {}).catch(() => ({}))
+        fetch("/data/products.csv", { cache: "no-store" }).then((response) => response.text()),
+        fetch("/data/pfas-free-products.csv", { cache: "no-store" }).then((response) => response.text()),
+        fetch("/data/product-images.json", { cache: "no-store" }).then((response) => response.ok ? response.json() : {}).catch(() => ({}))
       ]).then(([productsCsv, pfasCsv, productImages]) => {
         state.productImages = productImages;
         state.products = dedupeProducts([
