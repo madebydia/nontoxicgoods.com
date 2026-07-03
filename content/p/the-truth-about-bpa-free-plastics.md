@@ -23,13 +23,10 @@ It usually just means “swapped for something else equally harmful.”
 
 BPA (bisphenol A) is a synthetic chemical used to make plastics clear, rigid, and shatter-resistant. You’ll find it in:
 
-Plastic food containers and water bottles
-
-Can linings (canned food and drinks)
-
-Receipts
-
-Baby bottles (especially older ones—please don’t thrift these 😬)
+- Plastic food containers and water bottles
+- Can linings (canned food and drinks)
+- Receipts
+- Baby bottles (especially older ones—please don’t thrift these 😬)
 
 BPA is known to be an endocrine disruptor, meaning it can mimic estrogen and interfere with hormone function, especially in developing children and pregnant women. Exposure to BPA has been linked to a range of serious health effects, including impaired brain development, early puberty, infertility, increased risk of obesity and metabolic disorders, thyroid dysfunction, immune system disruption, and even higher rates of hormone-related cancers like breast and prostate cancer.
 
@@ -53,55 +50,52 @@ So while a “BPA-free” label might make a product feel safer, it often just m
 
 The best way to protect your family is to switch to safer materials and smarter habits. Here’s where to start:
 
-Swap plastic for glass or stainless steel: Store leftovers in glass containers, use stainless steel water bottles, and cook with wood, bamboo, or steel utensils.
-
-Choose fresh or frozen over canned foods: Many canned goods are lined with BPA or its substitutes. Opt for glass-jarred or frozen options when you can.
-
-Never heat plastic: Microwaving plastic—even “safe” kinds—accelerates chemical leaching, especially into fatty foods. Always use glass, ceramic, or stainless steel.
-
-Skip thermal paper receipts: Receipts are often coated in BPA. Opt for email receipts or wash your hands after handling them.
+- **Swap plastic for glass or stainless steel:** Store leftovers in glass containers, use stainless steel water bottles, and cook with wood, bamboo, or steel utensils.
+- **Choose fresh or frozen over canned foods:** Many canned goods are lined with BPA or its substitutes. Opt for glass-jarred or frozen options when you can.
+- **Never heat plastic:** Microwaving plastic—even “safe” kinds—accelerates chemical leaching, especially into fatty foods. Always use glass, ceramic, or stainless steel.
+- **Skip thermal paper receipts:** Receipts are often coated in BPA. Opt for email receipts or wash your hands after handling them.
 
 ## What I Use in My Home Instead
 
 Instead of aiming for perfection, I’m aiming for a home that supports my family’s health, one small choice at a time. Here’s what I’ve switched to over the years:
 
-🥛 Tableware:
+**🥛 Tableware:**
 
-Glass Ball Mason jars. These wide-mouth ones make excellent drinking glasses, and matching stainless steel lids make storing leftovers easy.
+- Glass Ball Mason jars. These wide-mouth ones make excellent drinking glasses, and matching stainless steel lids make storing leftovers easy.
 
-Insulated stainless steel mugs like this one from Yeti. I replaced the plastic straw with this made-in-USA stainless steel straw.
+- Insulated stainless steel mugs like this one from Yeti. I replaced the plastic straw with this made-in-USA stainless steel straw.
 
-These Made in USA 18/10 stainless steel flatware sets will last generations. The American Industrial design has a beautiful matte finish that doesn’t show fingerprints or scratches.
+- These Made in USA 18/10 stainless steel flatware sets will last generations. The American Industrial design has a beautiful matte finish that doesn’t show fingerprints or scratches.
 
-🥣 Food Storage:
+**🥣 Food Storage:**
 
-Glass containers. You can repurpose glass jars from pickles and pasta sauce for a no-cost storage option, or invest in a set of oven-and-microwave-safe glass containers. My favorites are the Rubbermaid Brilliance Glass Food Storage Containers because the lids are interchangeable between all sizes. The lids are made from StainShield™ (Tritan™) plastic, which is free of bisphenols, phthalates, and PFAS. (I still don’t let my food touch them though.)
+- Glass containers. You can repurpose glass jars from pickles and pasta sauce for a no-cost storage option, or invest in a set of oven-and-microwave-safe glass containers. My favorites are the Rubbermaid Brilliance Glass Food Storage Containers because the lids are interchangeable between all sizes. The lids are made from StainShield™ (Tritan™) plastic, which is free of bisphenols, phthalates, and PFAS. (I still don’t let my food touch them though.)
 
-Microwave-safe steel? Yes! For taking lunch to go, I love this microwaveable stainless steel lunch box.
+- Microwave-safe steel? Yes! For taking lunch to go, I love this microwaveable stainless steel lunch box.
 
-🍼 Baby & Kid Items:
+**🍼 Baby & Kid Items:**
 
-Replace plastic baby bottles with a Mason Bottle nipple top. Compatible with any Regular Mouth Mason jar, these Made in USA nipple tops are medical-grade silicone and easy to clean. Part of a modular system that grows with your kid:
+- Replace plastic baby bottles with a Mason Bottle nipple top. Compatible with any Regular Mouth Mason jar, these Made in USA nipple tops are medical-grade silicone and easy to clean. Part of a modular system that grows with your kid:
 
-Mason Bottle straw top cups for older kids. These tops are compatible with any stainless steel or glass mason jars, and the straws are medical-grade silicone.
+- Mason Bottle straw top cups for older kids. These tops are compatible with any stainless steel or glass mason jars, and the straws are medical-grade silicone.
 
-Stainless steel bento boxes or divided trays make great kid plates. They’re shatterproof, and a matching lid makes storing leftovers easy.
+- Stainless steel bento boxes or divided trays make great kid plates. They’re shatterproof, and a matching lid makes storing leftovers easy.
 
-This stainless steel utensil set for babies and toddlers is Made in USA and includes a feeder spoon (for you to spoon feed) and self-feeding spoon and fork, for when baby is ready to try it on their own!
+- This stainless steel utensil set for babies and toddlers is Made in USA and includes a feeder spoon (for you to spoon feed) and self-feeding spoon and fork, for when baby is ready to try it on their own!
 
-🍲 Cookware:
+**🍲 Cookware:**
 
-No plastic in the microwave. Ever. Heating plastic releases hormone-disrupting chemicals into foods, especially when in contact with fatty foods.
+- No plastic in the microwave. Ever. Heating plastic releases hormone-disrupting chemicals into foods, especially when in contact with fatty foods.
 
-One of my favorite cooking utensils is this remarkably simple and comfortable Made in USA stainless steel cook’s spoon. My second favorite is this unusual little server spoon, also Made in USA, that does as great a job cooking ground meat as it does serving casserole. Options abound for ladles, tongs, and turners too. Just make sure it’s all stainless steel, without aluminum (which can’t go in the dishwasher) or plastic handles.
+- One of my favorite cooking utensils is this remarkably simple and comfortable Made in USA stainless steel cook’s spoon. My second favorite is this unusual little server spoon, also Made in USA, that does as great a job cooking ground meat as it does serving casserole. Options abound for ladles, tongs, and turners too. Just make sure it’s all stainless steel, without aluminum (which can’t go in the dishwasher) or plastic handles.
 
-When you need a gentler touch, wood cooking utensils are an excellent alternative to steel. Make sure they’re uncoated (no varnish or paint that could get in your food) and treat them weekly with grass-fed beef tallow or beeswax. This quirky but surprisingly useful cowboy spatula is Made in USA (Texas, of course) from mesquite or pecan wood.
+- When you need a gentler touch, wood cooking utensils are an excellent alternative to steel. Make sure they’re uncoated (no varnish or paint that could get in your food) and treat them weekly with grass-fed beef tallow or beeswax. This quirky but surprisingly useful cowboy spatula is Made in USA (Texas, of course) from mesquite or pecan wood.
 
-For ease of use and cleanup, I swear by stainless steel cookware. Heritage x Eater stainless steel cookware is Made in USA and will last you generations. You can transition to these heirloom pieces over time, starting with your most-used pot or pan.
+- For ease of use and cleanup, I swear by stainless steel cookware. Heritage x Eater stainless steel cookware is Made in USA and will last you generations. You can transition to these heirloom pieces over time, starting with your most-used pot or pan.
 
-If you need nonstick cookware, the Titanium Pro line from Our Place is a very impressive no-coating invention! Its nonstick properties come from the pattern impressed into the titanium interior and work very well without any PFAS or Teflon. The largest 12.5” fry pan will handle everything from a family-size batch of eggs to weeknight dinners for a crowd.
+- If you need nonstick cookware, the Titanium Pro line from Our Place is a very impressive no-coating invention! Its nonstick properties come from the pattern impressed into the titanium interior and work very well without any PFAS or Teflon. The largest 12.5” fry pan will handle everything from a family-size batch of eggs to weeknight dinners for a crowd.
 
-When it comes to baking, I love glass bakeware like this surprisingly inexpensive 10-piece Made in USA set from Anchor Hocking.
+- When it comes to baking, I love glass bakeware like this surprisingly inexpensive 10-piece Made in USA set from Anchor Hocking.
 
 ## A Gentle Reminder: It’s OK to Transition Slowly
 
