@@ -1,3 +1,4 @@
+{{ $postImage := partial "post-image-src.html" . }}
 <!doctype html>
 <html lang="en" class="scroll-smooth">
   <head>
@@ -10,7 +11,7 @@
     <meta property="og:description" content="{{ .Description | default .Summary | plainify }}">
     <meta property="og:type" content="article">
     <meta property="og:url" content="{{ .Permalink }}">
-    {{ with .Params.image }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
+    {{ with $postImage }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
     <link rel="icon" href="/assets/good-default-logo.png">
     <link rel="stylesheet" href="/dark-mode.css?v=20260703-contrast2">
     <script src="https://cdn.tailwindcss.com/3.4.17"></script>
@@ -191,7 +192,7 @@
         "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
         "author": { "@type": "Person", "name": "{{ .Params.author | default site.Params.author }}" },
         "publisher": { "@type": "Organization", "name": "Good Default", "url": "{{ site.BaseURL }}" },
-        "mainEntityOfPage": "{{ .Permalink }}"{{ with .Params.image }},
+        "mainEntityOfPage": "{{ .Permalink }}"{{ with $postImage }},
         "image": "{{ . | absURL }}"{{ end }}
       }
     </script>
@@ -270,7 +271,7 @@
           <span class="bg-stone-100 text-stone-900 px-3 py-1 text-xs font-bold uppercase tracking-widest rounded-sm border border-stone-200">{{ .Params.category | default "Guide" }}</span>
           <span class="text-stone-400 font-bold text-xs uppercase tracking-widest">Published {{ .Date.Format "Jan 2, 2006" }}</span>
         </div>
-        <h1 class="font-serif font-black text-5xl md:text-7xl lg:text-8xl leading-[0.9] tracking-tighter text-stone-900 mb-8">
+        <h1 class="font-serif font-black text-5xl md:text-7xl lg:text-8xl leading-[0.9] tracking-normal text-stone-900 mb-8">
           {{ .Title }}
         </h1>
         <p class="text-xl md:text-2xl font-medium text-stone-500 leading-relaxed max-w-2xl">
@@ -278,7 +279,7 @@
         </p>
       </header>
 
-      {{ with .Params.image }}
+      {{ with $postImage }}
         <div class="relative w-full mb-20 group">
           <div class="absolute inset-0 bg-[#e3ded8] transform translate-x-3 translate-y-3 rounded-sm -z-10"></div>
           <div class="aspect-[16/9] border-[3px] border-stone-900 overflow-hidden bg-stone-100">
@@ -327,7 +328,7 @@
                 <a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink | urlquery }}" aria-label="Share on Facebook" class="h-9 border border-stone-200 rounded-sm flex items-center justify-center text-sm font-black text-stone-600 hover:text-stone-900 hover:border-stone-900 transition-colors" target="_blank" rel="noopener">
                   f
                 </a>
-                <a href="https://www.pinterest.com/pin/create/button/?url={{ .Permalink | urlquery }}&description={{ .Title | urlquery }}{{ with .Params.image }}&media={{ . | absURL | urlquery }}{{ end }}" aria-label="Share on Pinterest" class="h-9 border border-stone-200 rounded-sm flex items-center justify-center text-sm font-black text-stone-600 hover:text-stone-900 hover:border-stone-900 transition-colors" target="_blank" rel="noopener">
+                <a href="https://www.pinterest.com/pin/create/button/?url={{ .Permalink | urlquery }}&description={{ .Title | urlquery }}{{ with $postImage }}&media={{ . | absURL | urlquery }}{{ end }}" aria-label="Share on Pinterest" class="h-9 border border-stone-200 rounded-sm flex items-center justify-center text-sm font-black text-stone-600 hover:text-stone-900 hover:border-stone-900 transition-colors" target="_blank" rel="noopener">
                   P
                 </a>
                 <a href="mailto:?subject={{ .Title | urlquery }}&body={{ .Permalink | urlquery }}" aria-label="Share by email" class="h-9 border border-stone-200 rounded-sm flex items-center justify-center text-stone-600 hover:text-stone-900 hover:border-stone-900 transition-colors">
@@ -341,9 +342,10 @@
                 <h4 class="text-[10px] uppercase tracking-[0.2em] font-black text-stone-400 mb-6">Related Guides</h4>
                 <div class="space-y-8">
                   {{ range $relatedPosts }}
+                    {{ $relatedImage := partial "post-image-src.html" . }}
                     <a href="{{ .RelPermalink }}" class="group block no-underline">
                       <div class="aspect-[4/3] bg-stone-100 mb-3 border border-stone-200 overflow-hidden">
-                        {{ with .Params.image }}<img src="{{ . }}" alt="" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">{{ end }}
+                        {{ with $relatedImage }}<img src="{{ . }}" alt="" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">{{ end }}
                       </div>
                       <p class="text-[10px] font-black uppercase tracking-widest text-stone-500 mb-1">{{ .Params.category | default "Guide" }}</p>
                       <h5 class="font-serif font-bold text-sm text-stone-900 leading-tight group-hover:underline">{{ .Title }}</h5>
@@ -365,9 +367,10 @@
               <h4 class="text-[10px] uppercase tracking-[0.2em] font-black text-stone-400 mb-6">Related Guides</h4>
               <div class="grid gap-8 sm:grid-cols-2">
                 {{ range $relatedPosts }}
+                  {{ $relatedImage := partial "post-image-src.html" . }}
                   <a href="{{ .RelPermalink }}" class="group block no-underline">
                     <div class="aspect-[4/3] bg-stone-100 mb-3 border border-stone-200 overflow-hidden">
-                      {{ with .Params.image }}<img src="{{ . }}" alt="" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">{{ end }}
+                      {{ with $relatedImage }}<img src="{{ . }}" alt="" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">{{ end }}
                     </div>
                     <p class="text-[10px] font-black uppercase tracking-widest text-stone-500 mb-1">{{ .Params.category | default "Guide" }}</p>
                     <h5 class="font-serif font-bold text-base text-stone-900 leading-tight group-hover:underline">{{ .Title }}</h5>

@@ -4,7 +4,7 @@ date: 2026-06-25
 description: "Why “BPA-free” does not mean non-toxic, and the safer materials I use instead."
 author: "Diana Park"
 category: "Plastics"
-image: "/assets/posts/the-truth-about-bpa-free-plastics.jpg"
+image: "the-truth-about-bpa-free-plastics.jpg"
 picks:
   - "Storage & Organization|Mason Jars|Ball"
   - "Tableware|Insulated Stainless Steel Tumbler|Yeti"

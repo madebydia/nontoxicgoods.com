@@ -4,7 +4,7 @@ date: 2026-06-15
 description: "Why we ditched plastic leftovers containers — and the budget glass swaps we actually use."
 author: "Diana Park"
 category: "Storage"
-image: "/assets/posts/budget-glass-food-storage.jpg"
+image: "budget-glass-food-storage.jpg"
 ---
 
 If you’ve ever stored broth or pasta sauce in plastic containers, you’ve probably noticed how different they taste compared to when they were fresh-made or from a newly opened glass jar. But it’s not just about taste. Plastic—especially recycled plastic—can leach endocrine disruptors and toxins into your leftover meals, particularly when used with acidic or hot foods. That “off” leftovers taste you’re accustomed to may have nothing to do with the food going bad! The good news? One simple and very inexpensive kitchen swap can keep your food and family safer. Here’s how to switch to glass for pennies per meal.

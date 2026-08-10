@@ -527,6 +527,18 @@
     "src": "assets/products/other-consumables-reel-paper-toilet-paper-bamboo-920139d5.jpg",
     "width": 983
   },
+  "pantry|avoyeah! garlic aioli|grove": {
+    "height": 1024,
+    "source": "https://groveavocadooil.co.nz/wp-content/uploads/AvoYeahGarlicAioli.jpg",
+    "src": "assets/products/pantry-grove-avoyeah-garlic-aioli-2da2e301.jpg",
+    "width": 1024
+  },
+  "pantry|avoyeah! mayo sauce|grove": {
+    "height": 1024,
+    "source": "https://groveavocadooil.co.nz/wp-content/uploads/AvoYeahMayo.jpg",
+    "src": "assets/products/pantry-grove-avoyeah-mayo-sauce-ad8931ad.jpg",
+    "width": 1024
+  },
   "pantry|coconut oil, organic virgin|dr bronner\u2019s": {
     "height": 2048,
     "source": "https://cdn.shopify.com/s/files/1/0424/3475/6772/files/dr-bronners-virgin-coconut-oil-14oz-whole-kernel-1.jpg?v=1739602235",
@@ -556,6 +568,18 @@
     "source": "user-supplied:2026-06-13",
     "src": "assets/products/pantry-ancient-organics-ghee-user-20260613.png",
     "width": 800
+  },
+  "pantry|fancy extra virgin olive oil mayo|graza": {
+    "height": 1500,
+    "source": "https://cdn.shopify.com/s/files/1/0550/0003/9638/files/IMAGE_1_Fancy-Mayo_Squeeze.jpg?v=1770036532",
+    "src": "assets/products/pantry-graza-fancy-extra-virgin-olive-oil-mayo-ff057ce5.jpg",
+    "width": 1296
+  },
+  "pantry|original olive oil mayo|graza": {
+    "height": 1500,
+    "source": "https://cdn.shopify.com/s/files/1/0550/0003/9638/files/IMAGE1_Original-Mayo_Squeeze.jpg?v=1769777257",
+    "src": "assets/products/pantry-graza-original-olive-oil-mayo-7729797b.jpg",
+    "width": 1296
   },
   "pantry|protein bars|jacob": {
     "height": 839,

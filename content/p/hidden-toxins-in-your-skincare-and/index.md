@@ -4,7 +4,7 @@ date: 2026-06-18
 description: "A simple guide to the ingredients hiding in everyday personal care products, and the safer swaps to start with."
 author: "Diana Park"
 category: "Personal Care"
-image: "/assets/posts/hidden-toxins-in-your-skincare.jpg"
+image: "hidden-toxins-in-your-skincare.jpg"
 ---
 
 We trust the products we use every day—on our skin, our teeth, our lips, and on our kids. But many of these personal care staples are silently burdening our bodies with synthetic chemicals that disrupt hormones, impact fertility, and increase toxic load. If you want to make a sustainable switch to healthier, low-toxin options, this is the post for you. Don’t worry! You don’t have to overhaul everything overnight. Start small. Swap what you use the most. Here’s your simple guide.

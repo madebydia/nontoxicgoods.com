@@ -4,7 +4,7 @@ date: 2026-06-12
 description: "A searchable catalog of better household defaults, practical swap guides, and zero sponsored placements. Welcome!"
 author: "Diana Park"
 category: "Welcome"
-image: "/assets/posts/good-default-why-this-publication.jpg"
+image: "good-default-why-this-publication.jpg"
 ---
 
 A few years ago I started keeping a list. Every time I found a frying pan that wasn’t shedding forever chemicals, a sippy cup that wasn’t ‘BPA-free’ plastic theater, or a laundry detergent that didn’t perfume my baby’s clothes with a legal black box of undisclosed chemicals — it went on the list. Friends started asking for it. The list became a spreadsheet, the spreadsheet became [GoodDefault.com](/), and now the site has grown into this: a publication for the research behind the list.

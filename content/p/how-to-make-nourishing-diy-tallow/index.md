@@ -4,7 +4,7 @@ date: 2026-06-22
 description: "A simple recipe for what your skin eats."
 author: "Diana Park"
 category: "DIY"
-image: "/assets/posts/tallow-lip-balm-shelf.jpg"
+image: "tallow-lip-balm-shelf.jpg"
 picks:
   - "Personal Care|Tallow Lip Balm|Vintage Tradition"
   - "Personal Care|Tallow Skincare|Bello Tallow"

@@ -181,10 +181,11 @@
 
         <div class="asymmetric-grid gap-12">
           {{ range first 1 $posts }}
+            {{ $postImage := partial "post-image-src.html" . }}
             <article class="post-card col-span-12 lg:col-span-8 group" data-title="{{ .Title | lower }}" data-description="{{ .Description | lower }}" data-category="{{ .Params.category | urlize }}">
               <a href="{{ .RelPermalink }}" class="block no-underline">
                 <div class="relative mb-6 border-[3px] border-stone-900 overflow-hidden aspect-[16/9] bg-stone-100">
-                  {{ with .Params.image }}<img src="{{ . }}" alt="" class="w-full h-full object-cover painterly-filter transition-transform duration-700 group-hover:scale-105">{{ end }}
+                  {{ with $postImage }}<img src="{{ . }}" alt="" class="w-full h-full object-cover painterly-filter transition-transform duration-700 group-hover:scale-105">{{ end }}
                   <div class="absolute top-4 left-4 bg-white border-2 border-stone-900 px-4 py-1 font-bold text-xs uppercase tracking-widest">Latest</div>
                 </div>
                 <div class="max-w-2xl">
@@ -198,10 +199,11 @@
 
           <div class="col-span-12 lg:col-span-4 flex flex-col gap-12">
             {{ range first 2 (after 1 $posts) }}
+              {{ $postImage := partial "post-image-src.html" . }}
               <article class="post-card group" data-title="{{ .Title | lower }}" data-description="{{ .Description | lower }}" data-category="{{ .Params.category | urlize }}">
                 <a href="{{ .RelPermalink }}" class="block no-underline">
                   <div class="relative mb-4 border-[3px] border-stone-900 overflow-hidden aspect-square bg-stone-100">
-                    {{ with .Params.image }}<img src="{{ . }}" alt="" class="w-full h-full object-cover painterly-filter transition-transform duration-700 group-hover:scale-105">{{ end }}
+                    {{ with $postImage }}<img src="{{ . }}" alt="" class="w-full h-full object-cover painterly-filter transition-transform duration-700 group-hover:scale-105">{{ end }}
                   </div>
                   <span class="text-xs font-bold text-stone-500 uppercase tracking-widest mb-2 block">{{ .Params.category }}</span>
                   <h3 class="font-serif font-black text-2xl leading-tight text-stone-900 group-hover:underline decoration-2 underline-offset-2">{{ .Title }}</h3>
@@ -216,10 +218,11 @@
         <h2 class="font-serif font-black text-4xl mb-12 uppercase tracking-tighter">Library of Defaults</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {{ range after 3 $posts }}
+            {{ $postImage := partial "post-image-src.html" . }}
             <article class="post-card border-t border-stone-200 pt-6 group" data-title="{{ .Title | lower }}" data-description="{{ .Description | lower }}" data-category="{{ .Params.category | urlize }}">
               <a href="{{ .RelPermalink }}" class="block no-underline">
                 <div class="aspect-[3/4] mb-4 border-2 border-stone-900 overflow-hidden transition-all duration-500 bg-stone-100">
-                  {{ with .Params.image }}<img src="{{ . }}" alt="" class="w-full h-full object-cover">{{ end }}
+                  {{ with $postImage }}<img src="{{ . }}" alt="" class="w-full h-full object-cover">{{ end }}
                 </div>
                 <span class="text-[10px] font-black text-stone-400 uppercase tracking-widest">{{ .Date.Format "Jan 2, 2006" }} / {{ .ReadingTime }} min read</span>
                 <h3 class="font-serif font-bold text-xl mt-2 group-hover:text-stone-600 transition-colors">{{ .Title }}</h3>

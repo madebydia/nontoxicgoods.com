@@ -1,0 +1,9 @@
+{{ $page := . }}
+{{ $src := "" }}
+{{ with $page.Params.image }}
+  {{ $src = . }}
+  {{ with $page.Resources.GetMatch . }}
+    {{ $src = .RelPermalink }}
+  {{ end }}
+{{ end }}
+{{ return $src }}
