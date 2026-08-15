@@ -12,6 +12,7 @@
     <link rel="canonical" href="{{ .Permalink }}">
     <link rel="icon" href="/assets/good-default-logo.png">
     <link rel="stylesheet" href="/dark-mode.css?v=20260703-contrast2">
+    {{ partial "head-analytics.html" . }}
     <script src="https://cdn.tailwindcss.com/3.4.17"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -69,7 +70,7 @@
         margin-top: 3rem;
       }
 
-      @media (min-width: 1024px) {
+      @media (min-width: 768px) {
         .asymmetric-grid {
           display: grid;
           grid-template-columns: repeat(12, 1fr);
@@ -142,7 +143,6 @@
         <li><a href="/p/" class="text-stone-900 border-b-2 border-stone-900 pb-1">Posts</a></li>
         <li><a href="/catalog/" class="hover:text-stone-900 transition-colors">Catalog</a></li>
         <li><a href="/compare/" class="hover:text-stone-900 transition-colors">Compare</a></li>
-        <li><a href="/#method" class="hover:text-stone-900 transition-colors">Method</a></li>
       </ul>
     </nav>
 
@@ -182,7 +182,7 @@
         <div class="asymmetric-grid gap-12">
           {{ range first 1 $posts }}
             {{ $postImage := partial "post-image-src.html" . }}
-            <article class="post-card col-span-12 lg:col-span-8 group" data-title="{{ .Title | lower }}" data-description="{{ .Description | lower }}" data-category="{{ .Params.category | urlize }}">
+            <article class="post-card col-span-12 md:col-span-8 group" data-title="{{ .Title | lower }}" data-description="{{ .Description | lower }}" data-category="{{ .Params.category | urlize }}">
               <a href="{{ .RelPermalink }}" class="block no-underline">
                 <div class="relative mb-6 border-[3px] border-stone-900 overflow-hidden aspect-[16/9] bg-stone-100">
                   {{ with $postImage }}<img src="{{ . }}" alt="" class="w-full h-full object-cover painterly-filter transition-transform duration-700 group-hover:scale-105">{{ end }}
@@ -190,14 +190,14 @@
                 </div>
                 <div class="max-w-2xl">
                   <span class="text-xs font-bold text-stone-500 uppercase tracking-widest mb-4 block">{{ .Params.category }}</span>
-                  <h3 class="font-serif font-black text-4xl md:text-5xl leading-tight text-stone-900 mb-4 group-hover:underline decoration-4 underline-offset-4">{{ .Title }}</h3>
+                  <h3 class="font-serif font-black text-4xl lg:text-5xl leading-tight text-stone-900 mb-4 group-hover:underline decoration-4 underline-offset-4">{{ .Title }}</h3>
                   <p class="text-xl text-stone-600 leading-relaxed">{{ .Description }}</p>
                 </div>
               </a>
             </article>
           {{ end }}
 
-          <div class="col-span-12 lg:col-span-4 flex flex-col gap-12">
+          <div class="col-span-12 md:col-span-4 flex flex-col gap-12">
             {{ range first 2 (after 1 $posts) }}
               {{ $postImage := partial "post-image-src.html" . }}
               <article class="post-card group" data-title="{{ .Title | lower }}" data-description="{{ .Description | lower }}" data-category="{{ .Params.category | urlize }}">

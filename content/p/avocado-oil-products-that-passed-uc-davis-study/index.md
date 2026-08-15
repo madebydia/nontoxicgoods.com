@@ -1,7 +1,6 @@
 ---
 title: "The Avocado Oil Products That Passed the New UC Davis Study"
 description: "UC Davis tested two lots each of 27 foods labeled with avocado oil. Only two products passed in both lots. Here are the passing products and what the results actually mean."
-author: Diana Park
 date: 2026-08-10
 category: "Food"
 tags:

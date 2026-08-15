@@ -11,12 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700;9..144,900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/dark-mode.css?v=20260703-contrast2">
-    <!-- Privacy-friendly analytics by Plausible -->
-    <script async src="https://plausible.io/js/pa-6VzYHY6KNdTQPoQIRQwuo.js"></script>
-    <script>
-      window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
-      plausible.init()
-    </script>
+    {{ partial "head-analytics.html" . }}
     <script>
       tailwind.config = {
         theme: {
@@ -73,7 +68,6 @@
         <li><a href="/" class="hover:text-stone-900 transition-colors">Start Here</a></li>
         <li><a href="/catalog/" class="hover:text-stone-900 transition-colors">Catalog</a></li>
         <li><a href="/compare/" class="text-stone-900 border-b-2 border-stone-900 pb-1">Compare</a></li>
-        <li><a href="./#method" class="hover:text-stone-900 transition-colors">Method</a></li>
         <li><a href="/p/" class="hover:text-stone-900 transition-colors">Posts</a></li>
       </ul>
     </nav>
@@ -121,7 +115,7 @@
         <div>
           <h2 class="font-serif font-black text-4xl uppercase tracking-tighter leading-none mb-4">Good<br>Default</h2>
           <p class="text-stone-400 max-w-md">The searchable catalog of better household defaults. Research-backed, zero sponsored content.</p>
-          <p class="text-stone-500 max-w-xl mt-4 text-sm leading-relaxed">
+          <p class="text-stone-500 max-w-xl mt-4 text-xs italic leading-relaxed">
             Some links may earn a small commission, including Amazon links. As an Amazon Associate I earn from qualifying purchases. No brand can pay to be listed; the catalog is built from materials, testing, and real-home usefulness.
           </p>
         </div>
@@ -231,7 +225,8 @@
       function productVisual(product) {
         const image = productImage(product);
         if (image?.src) {
-          return `<img src="${esc(image.src)}" alt="${esc(`${product.Brand} ${product.Name}`)}" class="h-full w-full object-contain bg-white p-4">`;
+          const imageSrc = image.src.startsWith("/") ? image.src : `/${image.src}`;
+          return `<img src="${esc(imageSrc)}" alt="${esc(`${product.Brand} ${product.Name}`)}" class="h-full w-full object-contain bg-white p-4">`;
         }
 
         return `

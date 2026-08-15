@@ -14,6 +14,7 @@
     {{ with $postImage }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
     <link rel="icon" href="/assets/good-default-logo.png">
     <link rel="stylesheet" href="/dark-mode.css?v=20260703-contrast2">
+    {{ partial "head-analytics.html" . }}
     <script src="https://cdn.tailwindcss.com/3.4.17"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -161,6 +162,18 @@
         font-weight: 800;
       }
 
+      .post-content .affiliate-notice {
+        font-size: 0.875rem;
+        font-style: italic;
+        line-height: 1.6;
+        margin-top: 2.5rem;
+        opacity: 0.72;
+      }
+
+      .post-content .affiliate-notice p {
+        margin: 0;
+      }
+
       .post-content img {
         border: 2px solid #1c1917;
         margin: 2rem 0;
@@ -261,7 +274,6 @@
         <li><a href="/p/" class="text-stone-900 border-b-2 border-stone-900 pb-1">Posts</a></li>
         <li><a href="/catalog/" class="hover:text-stone-900 transition-colors">Catalog</a></li>
         <li><a href="/compare/" class="hover:text-stone-900 transition-colors">Compare</a></li>
-        <li><a href="/#method" class="hover:text-stone-900 transition-colors">Method</a></li>
       </ul>
     </nav>
 
@@ -288,9 +300,9 @@
         </div>
       {{ end }}
 
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
-        <aside class="lg:col-span-3 lg:border-r border-stone-200 lg:pr-12">
-          <div class="lg:sticky lg:top-32">
+      <div class="grid grid-cols-1 md:grid-cols-[14rem_minmax(0,1fr)] gap-12 md:gap-8 lg:gap-12">
+        <aside class="md:border-r border-stone-200 md:pr-6 lg:pr-12">
+          <div class="md:sticky md:top-32">
             {{ if gt (len $vettedPicks) 0 }}
               <div class="mb-10 pb-10 border-b border-stone-200">
                 <h4 class="text-[10px] uppercase tracking-[0.2em] font-black text-stone-400 mb-5">The Vetted Picks</h4>
@@ -338,7 +350,7 @@
             </div>
 
             {{ if gt (len $relatedPosts) 0 }}
-              <div class="hidden lg:block pt-10 border-t border-stone-200">
+              <div class="hidden md:block pt-10 border-t border-stone-200">
                 <h4 class="text-[10px] uppercase tracking-[0.2em] font-black text-stone-400 mb-6">Related Guides</h4>
                 <div class="space-y-8">
                   {{ range $relatedPosts }}
@@ -357,13 +369,13 @@
           </div>
         </aside>
 
-        <article class="lg:col-span-8 lg:col-start-5 max-w-2xl">
+        <article class="max-w-2xl">
           <div class="post-content">
             {{ .Content }}
           </div>
 
           {{ if gt (len $relatedPosts) 0 }}
-            <section class="lg:hidden mt-16 pt-10 border-t border-stone-200">
+            <section class="md:hidden mt-16 pt-10 border-t border-stone-200">
               <h4 class="text-[10px] uppercase tracking-[0.2em] font-black text-stone-400 mb-6">Related Guides</h4>
               <div class="grid gap-8 sm:grid-cols-2">
                 {{ range $relatedPosts }}
@@ -380,13 +392,6 @@
             </section>
           {{ end }}
 
-          <hr class="border-t-2 border-stone-900 my-20">
-
-          <div class="bg-stone-50 border border-stone-200 p-8 md:p-10 rounded-sm">
-            <h3 class="font-serif font-black text-2xl text-stone-900 mb-4">The Good Default Promise</h3>
-            <p class="text-stone-600 mb-6 leading-relaxed">We do not sell sponsored placements. Product mentions are chosen for practical usefulness, materials, and fit with the Good Default catalog.</p>
-            <a href="/#method" class="font-bold text-stone-900 underline decoration-2 underline-offset-4 hover:bg-stone-200">Read the methodology</a>
-          </div>
         </article>
       </div>
     </main>
